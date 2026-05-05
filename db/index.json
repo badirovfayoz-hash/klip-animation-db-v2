@@ -1,0 +1,23 @@
+{
+  "version": "2.0",
+  "name": "Kichkina Dunyo",
+  "description": "Drama Farm uslubidagi 2D animatsiyalar bazasi",
+  "generated": "2026-05-05T00:00:00",
+  "total": 0,
+  "categories": {
+    "dog_psychology": [],
+    "philosophy": [],
+    "psychology": [],
+    "food_nutrition": [],
+    "book_analysis": [],
+    "humans": [],
+    "emotions": [],
+    "animals": [],
+    "nature": [],
+    "objects": [],
+    "events": [],
+    "relationships": [],
+    "abstract": [],
+    "backgrounds": []
+  }
+}
