@@ -56,16 +56,32 @@ def call_gemini(topic, category):
     }).encode()
     
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={GEMINI_API_KEY}"
-    
-    req = urllib.request.Request(
-        url,
-        data=payload,
-        headers={"Content-Type": "application/json"}
-    )
-    
-    with urllib.request.urlopen(req, timeout=45) as resp:
-        data = json.loads(resp.read())
-        return data['candidates'][0]['content']['parts'][0]['text'].strip()
+
+    # Retry: 503 va 429 uchun 4 marta urinadi
+    retries = 4
+    wait = 15  # birinchi kutish vaqti (soniya)
+
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(
+                url,
+                data=payload,
+                headers={"Content-Type": "application/json"}
+            )
+            with urllib.request.urlopen(req, timeout=45) as resp:
+                data = json.loads(resp.read())
+                return data['candidates'][0]['content']['parts'][0]['text'].strip()
+
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 503):
+                if attempt < retries - 1:
+                    print(f" [{e.code}] {wait}s kutilmoqda...", end=' ', flush=True)
+                    time.sleep(wait)
+                    wait *= 2  # har safar 2x oshadi: 15 → 30 → 60 → 120
+                else:
+                    raise
+            else:
+                raise
 
 def extract_js_function(raw):
     raw = re.sub(r'```(?:javascript|js)?\n?', '', raw)
