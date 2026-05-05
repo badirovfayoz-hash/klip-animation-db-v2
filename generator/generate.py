@@ -1,21 +1,21 @@
 """
 KLIP ANIMATION DB v2 — GENERATOR
-OpenRouter API bilan 24/7 ishlaydigan animatsiya generator.
+Google Gemini API bilan 24/7 ishlaydigan animatsiya generator.
+Kuniga 1500 bepul so'rov!
 """
 
-import os, sys, json, re, time, subprocess
+import os, sys, json, re, time
 from pathlib import Path
 from datetime import datetime
 
-OPENROUTER_API_KEY = os.environ.get('OPENROUTER_API_KEY', '')
+GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY', '')
 DB_DIR = Path(__file__).parent.parent / 'db'
 INDEX_FILE = DB_DIR / 'index.json'
 BATCH_SIZE = int(os.environ.get('BATCH_SIZE', '50'))
-MODEL = "meta-llama/llama-3.3-70b-instruct:free"
+MODEL = "gemini-2.0-flash"
+DELAY_BETWEEN_REQUESTS = 2.0
 
-DELAY_BETWEEN_REQUESTS = 3.0
-
-SYSTEM_PROMPT = """You are a Canvas 2D animation expert writing functions for "Drama Farm" style.
+SYSTEM_PROMPT = """You are a Canvas 2D animation expert writing functions for Drama Farm style.
 
 STYLE RULES:
 - Background: beige/cream (#f5f0e8)
@@ -23,16 +23,17 @@ STYLE RULES:
 - Characters: stick figures with round heads
 - Feeling: hand-drawn whiteboard animation
 
-FUNCTION FORMAT:
+FUNCTION FORMAT (write ONLY this):
 function draw(ctx, t, W, H) {
   ctx.save();
   ctx.fillStyle = '#f5f0e8';
   ctx.fillRect(0, 0, W, H);
+  // animation here using Math.sin(t)
   ctx.restore();
 }
 
 RULES:
-- Use Math.sin(t), Math.cos(t) for loops
+- Use Math.sin(t), Math.cos(t) for smooth loops
 - Always ctx.save() and ctx.restore()
 - Write ONLY the function, nothing else"""
 
@@ -41,32 +42,30 @@ from topics import ALL_TOPICS
 
 import urllib.request, urllib.error
 
-def call_api(topic, category):
-    prompt = f'Animation topic: "{topic}"\nCategory: {category}\nWrite only the draw(ctx, t, W, H) function. Drama Farm style.'
+def call_gemini(topic, category):
+    prompt = f'Animation topic: "{topic}"\nCategory: {category}\nWrite only the draw(ctx, t, W, H) function. Drama Farm style. No explanation.'
     
     payload = json.dumps({
-        "model": MODEL,
-        "max_tokens": 2000,
-        "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": prompt}
-        ]
+        "contents": [{
+            "parts": [{"text": SYSTEM_PROMPT + "\n\n" + prompt}]
+        }],
+        "generationConfig": {
+            "maxOutputTokens": 2000,
+            "temperature": 0.7
+        }
     }).encode()
     
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={GEMINI_API_KEY}"
+    
     req = urllib.request.Request(
-        "https://openrouter.ai/api/v1/chat/completions",
+        url,
         data=payload,
-        headers={
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {OPENROUTER_API_KEY}",
-            "HTTP-Referer": "https://github.com/klip-animation-db",
-            "X-Title": "Klip Animation DB"
-        }
+        headers={"Content-Type": "application/json"}
     )
     
     with urllib.request.urlopen(req, timeout=45) as resp:
         data = json.loads(resp.read())
-        return data['choices'][0]['message']['content'].strip()
+        return data['candidates'][0]['content']['parts'][0]['text'].strip()
 
 def extract_js_function(raw):
     raw = re.sub(r'```(?:javascript|js)?\n?', '', raw)
@@ -130,12 +129,12 @@ def rebuild_index():
     return index['total']
 
 def main():
-    if not OPENROUTER_API_KEY:
-        print("ERROR: OPENROUTER_API_KEY yo'q!")
+    if not GEMINI_API_KEY:
+        print("ERROR: GEMINI_API_KEY yo'q!")
         sys.exit(1)
     
     print("=" * 50)
-    print("KLIP ANIMATION DB v2 — OpenRouter Generator")
+    print("KLIP ANIMATION DB v2 — Gemini Generator")
     print(f"Model: {MODEL}, Batch: {BATCH_SIZE}")
     print("=" * 50)
     
@@ -163,7 +162,7 @@ def main():
     for category, topic in pending[:BATCH_SIZE]:
         print(f"[{generated+1}/{min(BATCH_SIZE, len(pending))}] {category} | {topic[:40]}...", end=' ', flush=True)
         try:
-            raw = call_api(topic, category)
+            raw = call_gemini(topic, category)
             code = extract_js_function(raw)
             if not code:
                 print("SKIP")
@@ -183,7 +182,7 @@ def main():
             print(f"OK ({len(code)} chars)")
             generated += 1
         except Exception as e:
-            print(f"XATO: {str(e)[:50]}")
+            print(f"XATO: {str(e)[:60]}")
             errors += 1
             time.sleep(5)
         time.sleep(DELAY_BETWEEN_REQUESTS)
