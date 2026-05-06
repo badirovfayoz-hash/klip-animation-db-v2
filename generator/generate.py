@@ -11,9 +11,9 @@ from datetime import datetime
 GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY', '')
 DB_DIR = Path(__file__).parent.parent / 'db'
 INDEX_FILE = DB_DIR / 'index.json'
-BATCH_SIZE = int(os.environ.get('BATCH_SIZE', '50'))
-MODEL = "gemini-2.0-flash"
-DELAY_BETWEEN_REQUESTS = 4.5
+BATCH_SIZE = int(os.environ.get('BATCH_SIZE', '20'))
+MODEL = "gemini-2.5-flash"
+DELAY_BETWEEN_REQUESTS = 3.0
 
 SYSTEM_PROMPT = """You are a Canvas 2D animation expert writing functions for Drama Farm style.
 
