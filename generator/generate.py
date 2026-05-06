@@ -58,8 +58,8 @@ def call_gemini(topic, category):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={GEMINI_API_KEY}"
 
     # Retry: 503 va 429 uchun 4 marta urinadi
-    retries = 4
-    wait = 15  # birinchi kutish vaqti (soniya)
+    retries = 2
+    wait = 8  # birinchi kutish vaqti (soniya)
 
     for attempt in range(retries):
         try:
