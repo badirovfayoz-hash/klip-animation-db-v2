@@ -1,0 +1,15 @@
+{
+  "id": "psychology_psychology_insight_human_behavior_566",
+  "category": "psychology",
+  "topic": "psychology insight human behavior 566",
+  "tags": [
+    "psychology",
+    "insight",
+    "human",
+    "behavior",
+    "566"
+  ],
+  "created": "2026-05-07T15:54:27.804805",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // brain\n  ctx.fillStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // thought bubble\n  ctx.beginPath();\n  ctx.arc(W/2 + 100 + 20 * Math.sin(t), H/2 - 50, 30, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // stick figure\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 100, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 120);\n  ctx.lineTo(W/2, H/2 + 200);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 150);\n  ctx.lineTo(W/2 - 30, H/2 + 180);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 150);\n  ctx.lineTo(W/2 + 30, H/2 + 180);\n  ctx.stroke();\n  \n  // psychology symbol\n  ctx.font = '30px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Ψ', W/2, H/2 + 250 + 10 * Math.sin(t));\n  \n  ctx.restore();\n}"
+}

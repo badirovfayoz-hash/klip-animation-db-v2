@@ -1,0 +1,15 @@
+{
+  "id": "food_nutrition_nutrition_health_food_benefit_467",
+  "category": "food_nutrition",
+  "topic": "nutrition health food benefit 467",
+  "tags": [
+    "nutrition",
+    "health",
+    "food",
+    "benefit",
+    "467"
+  ],
+  "created": "2026-05-07T15:54:57.269437",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // draw apple\n  ctx.fillStyle = 'red';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  // draw stick figure\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2 - 100, H/2 - 50, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 - 30);\n  ctx.lineTo(W/2 - 100, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 - 10);\n  ctx.lineTo(W/2 - 80, H/2 + 20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 - 10);\n  ctx.lineTo(W/2 - 120, H/2 + 20);\n  ctx.stroke();\n  \n  // draw speech bubble\n  ctx.fillStyle = 'white';\n  ctx.beginPath();\n  ctx.arc(W/2 - 150, H/2 - 120, 30, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  ctx.fillStyle = 'black';\n  ctx.font = '20px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillText('Eat me!', W/2 - 150, H/2 - 120);\n  \n  // animate stick figure and apple\n  ctx.save();\n  ctx.translate(W/2 - 100, H/2 - 50);\n  ctx.rotate(Math.sin(t));\n  ctx.beginPath();\n  ctx.moveTo(0, 0);\n  ctx.lineTo(0, 20);\n  ctx.stroke();\n  ctx.restore();\n  \n  ctx.save();\n  ctx.translate(W/2, H/2);\n  ctx.rotate(Math.cos(t));\n  ctx.beginPath();\n  ctx.moveTo(0, 0);\n  ctx.lineTo(50, 0);\n  ctx.stroke();\n  ctx.restore();\n  \n  ctx.restore();\n}"
+}
