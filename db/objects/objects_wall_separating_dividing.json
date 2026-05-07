@@ -1,0 +1,13 @@
+{
+  "id": "objects_wall_separating_dividing",
+  "category": "objects",
+  "topic": "wall separating dividing",
+  "tags": [
+    "wall",
+    "separating",
+    "dividing"
+  ],
+  "created": "2026-05-07T07:41:59.873178",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.rect(W/2 + 50*Math.sin(t), 0, 10, H);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.rect(W/2 - 50*Math.sin(t), 0, 10, H);\n  ctx.stroke();\n  ctx.fillStyle = 'black';\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillText('DIVIDED', W/2 + 60*Math.sin(t), H/2);\n  ctx.fillText('UNIFIED', W/2 - 60*Math.sin(t), H/2);\n  ctx.restore();\n}"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "events_forgiveness_releasing_burden",
+  "category": "events",
+  "topic": "forgiveness releasing burden",
+  "tags": [
+    "forgiveness",
+    "releasing",
+    "burden"
+  ],
+  "created": "2026-05-07T07:41:55.924805",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // character\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  \n  // burden\n  ctx.beginPath();\n  ctx.rect(W/2 - 20, H/2 + 50, 40, 20);\n  ctx.stroke();\n  \n  // forgiveness\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 80, 10 + 10*Math.sin(t), 0, 2*Math.PI);\n  ctx.stroke();\n  \n  // releasing burden\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2, H/2 + 50 + 20*Math.sin(t));\n  ctx.stroke();\n  \n  // arms\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2 - 20, H/2 + 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2 + 20, H/2 + 40);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
