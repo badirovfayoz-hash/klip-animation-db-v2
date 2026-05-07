@@ -1,0 +1,14 @@
+{
+  "id": "nature_nature_phenomenon_beautiful_489",
+  "category": "nature",
+  "topic": "nature phenomenon beautiful 489",
+  "tags": [
+    "nature",
+    "phenomenon",
+    "beautiful",
+    "489"
+  ],
+  "created": "2026-05-07T16:13:47.271636",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 100 + 50 * Math.sin(t), 0, 2 * Math.PI);\n  ctx.stroke();\n  for (let i = 0; i < 10; i++) {\n    ctx.beginPath();\n    ctx.arc(W/2 + (100 + 50 * Math.sin(t)) * Math.cos(i * Math.PI / 5 + t), \n            H/2 + (100 + 50 * Math.sin(t)) * Math.sin(i * Math.PI / 5 + t), \n            10, 0, 2 * Math.PI);\n    ctx.fillStyle = 'black';\n    ctx.fill();\n  }\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 10, 0, 2 * Math.PI);\n  ctx.fillStyle = 'black';\n  ctx.fill();\n  ctx.restore();\n}"
+}
