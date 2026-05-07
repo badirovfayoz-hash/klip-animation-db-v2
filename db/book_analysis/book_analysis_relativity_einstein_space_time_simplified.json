@@ -1,0 +1,15 @@
+{
+  "id": "book_analysis_relativity_einstein_space_time_simplified",
+  "category": "book_analysis",
+  "topic": "relativity einstein space time simplified",
+  "tags": [
+    "relativity",
+    "einstein",
+    "space",
+    "time",
+    "simplified"
+  ],
+  "created": "2026-05-07T07:45:56.316692",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // draw einstein\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 20, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 20, H/2 + 70);\n  ctx.stroke();\n  \n  // draw clock\n  ctx.beginPath();\n  ctx.arc(W/2 + 100, H/2, 30, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100, H/2);\n  ctx.lineTo(W/2 + 100 + 20 * Math.sin(t), H/2 - 20 * Math.cos(t));\n  ctx.stroke();\n  \n  // draw space time curvature\n  ctx.beginPath();\n  ctx.moveTo(0, H/2 + 50 * Math.sin(t));\n  ctx.bezierCurveTo(W/2, H/2 + 50 * Math.sin(t + Math.PI/2), W/2, H/2 + 50 * Math.sin(t - Math.PI/2), W, H/2 + 50 * Math.sin(t));\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

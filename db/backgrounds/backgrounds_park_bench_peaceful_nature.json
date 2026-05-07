@@ -1,0 +1,14 @@
+{
+  "id": "backgrounds_park_bench_peaceful_nature",
+  "category": "backgrounds",
+  "topic": "park bench peaceful nature",
+  "tags": [
+    "park",
+    "bench",
+    "peaceful",
+    "nature"
+  ],
+  "created": "2026-05-07T07:45:13.950171",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.moveTo(0, H - 50);\n  ctx.lineTo(W, H - 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W / 2, H - 30, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W / 2 - 20, H - 30);\n  ctx.lineTo(W / 2 - 20, H - 10);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W / 2 + 20, H - 30);\n  ctx.lineTo(W / 2 + 20, H - 10);\n  ctx.stroke();\n  ctx.fillStyle = 'black';\n  ctx.font = '20px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillText('Park Bench', W / 2, H - 70);\n  ctx.beginPath();\n  ctx.moveTo(50, H - 100);\n  ctx.lineTo(50, H - 50);\n  ctx.lineTo(50 + 20 + Math.sin(t) * 10, H - 50);\n  ctx.lineTo(50 + 20 + Math.sin(t) * 10, H - 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W - 50, H - 100);\n  ctx.lineTo(W - 50, H - 50);\n  ctx.lineTo(W - 50 - 20 - Math.sin(t) * 10, H - 50);\n  ctx.lineTo(W - 50 - 20 - Math.sin(t) * 10, H - 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(100, H - 150, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W - 100, H - 150, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(100, H - 130);\n  ctx.lineTo(100, H - 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W - 100, H - 130);\n  ctx.lineTo(W - 100, H - 100);\n  ctx.stroke();\n  ctx.restore();\n}"
+}

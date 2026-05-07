@@ -1,0 +1,14 @@
+{
+  "id": "events_first_day_school_nervous",
+  "category": "events",
+  "topic": "first day school nervous",
+  "tags": [
+    "first",
+    "day",
+    "school",
+    "nervous"
+  ],
+  "created": "2026-05-07T07:45:23.764107",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // draw character\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // draw body\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 100);\n  ctx.stroke();\n  \n  // draw arms\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 30 + 10 * Math.sin(t), H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 30 + 10 * Math.sin(t), H/2 + 70);\n  ctx.stroke();\n  \n  // draw legs\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 100);\n  ctx.lineTo(W/2 - 20 + 10 * Math.cos(t), H/2 + 130);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 100);\n  ctx.lineTo(W/2 + 20 + 10 * Math.cos(t), H/2 + 130);\n  ctx.stroke();\n  \n  // draw backpack\n  ctx.fillStyle = 'black';\n  ctx.fillRect(W/2 - 15, H/2 + 50, 30, 20);\n  \n  // draw nervous face\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 10 + 5 * Math.sin(t), 10, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 - 10, H/2 - 20, 2, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 + 10, H/2 - 20, 2, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 15, H/2 - 30);\n  ctx.lineTo(W/2 + 15, H/2 - 30);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
