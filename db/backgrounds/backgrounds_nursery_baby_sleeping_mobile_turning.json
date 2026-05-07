@@ -1,0 +1,15 @@
+{
+  "id": "backgrounds_nursery_baby_sleeping_mobile_turning",
+  "category": "backgrounds",
+  "topic": "nursery baby sleeping mobile turning",
+  "tags": [
+    "nursery",
+    "baby",
+    "sleeping",
+    "mobile",
+    "turning"
+  ],
+  "created": "2026-05-07T15:59:16.059300",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 100, 0, 2 * Math.PI);\n  ctx.stroke();\n  for (let i = 0; i < 5; i++) {\n    ctx.save();\n    ctx.translate(W/2, H/2);\n    ctx.rotate(i * Math.PI / 2.5 + Math.sin(t + i));\n    ctx.beginPath();\n    ctx.arc(0, -50, 20, 0, 2 * Math.PI);\n    ctx.stroke();\n    ctx.beginPath();\n    ctx.moveTo(0, -50);\n    ctx.lineTo(0, -100);\n    ctx.stroke();\n    ctx.restore();\n  }\n  ctx.restore();\n}"
+}
