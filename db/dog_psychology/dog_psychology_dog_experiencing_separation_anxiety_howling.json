@@ -1,0 +1,15 @@
+{
+  "id": "dog_psychology_dog_experiencing_separation_anxiety_howling",
+  "category": "dog_psychology",
+  "topic": "dog experiencing separation anxiety howling",
+  "tags": [
+    "dog",
+    "experiencing",
+    "separation",
+    "anxiety",
+    "howling"
+  ],
+  "created": "2026-05-07T13:43:53.976626",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // dog body\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  \n  // dog head\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 25, 25, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // dog ears\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 15, H/2 - 40);\n  ctx.lineTo(W/2 - 25, H/2 - 60 + 20 * Math.sin(t));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 15, H/2 - 40);\n  ctx.lineTo(W/2 + 25, H/2 - 60 + 20 * Math.sin(t));\n  ctx.stroke();\n  \n  // dog mouth\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 10, H/2 - 10);\n  ctx.lineTo(W/2 + 10, H/2 - 10);\n  ctx.stroke();\n  \n  // howling effect\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 10, 10 + 5 * Math.sin(t), 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

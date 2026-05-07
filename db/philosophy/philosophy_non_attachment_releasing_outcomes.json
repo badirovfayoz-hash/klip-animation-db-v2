@@ -1,0 +1,13 @@
+{
+  "id": "philosophy_non_attachment_releasing_outcomes",
+  "category": "philosophy",
+  "topic": "non-attachment releasing outcomes",
+  "tags": [
+    "non-attachment",
+    "releasing",
+    "outcomes"
+  ],
+  "created": "2026-05-07T13:44:12.856067",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // draw stick figure\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 20, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 20, H/2 + 70);\n  ctx.stroke();\n  \n  // draw balloon\n  ctx.beginPath();\n  ctx.arc(W/2 + 50 + 20 * Math.sin(t), H/2 - 20 - 20 * Math.cos(t), 10, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // draw string\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 20 * Math.sin(t), H/2 + 20 - 20 * Math.cos(t));\n  ctx.lineTo(W/2 + 50 + 20 * Math.sin(t), H/2 - 20 - 20 * Math.cos(t));\n  ctx.stroke();\n  \n  // draw releasing hand\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50 + 20 * Math.sin(t), H/2 - 20 - 20 * Math.cos(t));\n  ctx.lineTo(W/2 + 70 + 20 * Math.sin(t), H/2 - 40 - 20 * Math.cos(t));\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
