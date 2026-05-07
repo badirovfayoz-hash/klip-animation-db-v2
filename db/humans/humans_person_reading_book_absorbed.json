@@ -1,0 +1,14 @@
+{
+  "id": "humans_person_reading_book_absorbed",
+  "category": "humans",
+  "topic": "person reading book absorbed",
+  "tags": [
+    "person",
+    "reading",
+    "book",
+    "absorbed"
+  ],
+  "created": "2026-05-07T13:51:27.028176",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // head\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 50, 30, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // body\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  \n  // arms\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 10);\n  ctx.lineTo(W/2 - 40 + 20 * Math.sin(t), H/2 + 10);\n  ctx.stroke();\n  \n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 10);\n  ctx.lineTo(W/2 + 40 - 20 * Math.sin(t), H/2 + 10);\n  ctx.stroke();\n  \n  // legs\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 20, H/2 + 100);\n  ctx.stroke();\n  \n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 20, H/2 + 100);\n  ctx.stroke();\n  \n  // book\n  ctx.fillStyle = 'black';\n  ctx.fillRect(W/2 - 30 + 10 * Math.sin(t), H/2 + 20, 60, 30);\n  \n  ctx.restore();\n}"
+}

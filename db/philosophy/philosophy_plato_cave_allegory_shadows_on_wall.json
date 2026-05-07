@@ -1,0 +1,16 @@
+{
+  "id": "philosophy_plato_cave_allegory_shadows_on_wall",
+  "category": "philosophy",
+  "topic": "plato cave allegory shadows on wall",
+  "tags": [
+    "plato",
+    "cave",
+    "allegory",
+    "shadows",
+    "on",
+    "wall"
+  ],
+  "created": "2026-05-07T13:51:11.343370",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // Draw cave wall\n  ctx.beginPath();\n  ctx.moveTo(0, H / 2);\n  ctx.lineTo(W, H / 2);\n  ctx.stroke();\n  \n  // Draw prisoner\n  ctx.beginPath();\n  ctx.arc(W / 4, H / 2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W / 4, H / 2 + 20);\n  ctx.lineTo(W / 4, H / 2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W / 4, H / 2 + 30);\n  ctx.lineTo(W / 4 - 20, H / 2 + 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W / 4, H / 2 + 30);\n  ctx.lineTo(W / 4 + 20, H / 2 + 40);\n  ctx.stroke();\n  \n  // Draw shadows\n  ctx.lineWidth = 2;\n  ctx.beginPath();\n  ctx.moveTo(W / 2 + 50 * Math.sin(t), H / 2 - 20);\n  ctx.lineTo(W / 2 + 50 * Math.sin(t), H / 2 + 20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W / 2 + 30 * Math.cos(t), H / 2 - 10);\n  ctx.lineTo(W / 2 + 30 * Math.cos(t), H / 2 + 10);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W / 2 + 70 * Math.sin(t), H / 2 - 30);\n  ctx.lineTo(W / 2 + 70 * Math.sin(t), H / 2 + 30);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

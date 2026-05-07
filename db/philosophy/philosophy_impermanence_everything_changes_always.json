@@ -1,0 +1,14 @@
+{
+  "id": "philosophy_impermanence_everything_changes_always",
+  "category": "philosophy",
+  "topic": "impermanence everything changes always",
+  "tags": [
+    "impermanence",
+    "everything",
+    "changes",
+    "always"
+  ],
+  "created": "2026-05-07T13:51:16.447394",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // draw stick figure\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20 + 10 * Math.sin(t), 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20 + 10 * Math.sin(t));\n  ctx.lineTo(W/2, H/2 + 50 + 10 * Math.sin(t));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50 + 10 * Math.sin(t));\n  ctx.lineTo(W/2 - 20 + 10 * Math.cos(t), H/2 + 70 + 10 * Math.sin(t));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50 + 10 * Math.sin(t));\n  ctx.lineTo(W/2 + 20 + 10 * Math.cos(t), H/2 + 70 + 10 * Math.sin(t));\n  ctx.stroke();\n  \n  // draw changing background shapes\n  ctx.fillStyle = 'black';\n  ctx.globalAlpha = 0.2;\n  ctx.beginPath();\n  ctx.arc(W/2 + 50 * Math.cos(t), H/2 + 50 * Math.sin(t), 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2 + 70 * Math.cos(t + Math.PI/2), H/2 + 70 * Math.sin(t + Math.PI/2), 30, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  ctx.globalAlpha = 1;\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('everything changes', W/2, H/2 - 80 + 10 * Math.sin(t));\n  ctx.fillText('always', W/2, H/2 - 50 + 10 * Math.sin(t));\n  \n  ctx.restore();\n}"
+}
