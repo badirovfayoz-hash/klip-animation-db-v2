@@ -1,0 +1,15 @@
+{
+  "id": "events_life_event_changing_moment_1704",
+  "category": "events",
+  "topic": "life event changing moment 1704",
+  "tags": [
+    "life",
+    "event",
+    "changing",
+    "moment",
+    "1704"
+  ],
+  "created": "2026-05-07T15:51:40.466472",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // sun\n  ctx.fillStyle = 'yellow';\n  ctx.beginPath();\n  ctx.arc(W/2, H/4, 50, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  // tree\n  ctx.fillStyle = 'green';\n  ctx.beginPath();\n  ctx.arc(W/2, H*3/4, 30, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H*3/4 + 30);\n  ctx.lineTo(W/2, H);\n  ctx.stroke();\n  \n  // character\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2 + 100*Math.sin(t), H*3/4 - 50, 20, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100*Math.sin(t), H*3/4 - 30);\n  ctx.lineTo(W/2 + 100*Math.sin(t), H*3/4 - 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100*Math.sin(t), H*3/4 - 60);\n  ctx.lineTo(W/2 + 100*Math.sin(t) - 30, H*3/4 - 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100*Math.sin(t), H*3/4 - 60);\n  ctx.lineTo(W/2 + 100*Math.sin(t) + 30, H*3/4 - 40);\n  ctx.stroke();\n  \n  // event text\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('1704', W/2 + 100*Math.sin(t), H*3/4 - 100);\n  \n  ctx.restore();\n}"
+}
