@@ -1,0 +1,15 @@
+{
+  "id": "food_nutrition_nutrition_health_food_benefit_2175",
+  "category": "food_nutrition",
+  "topic": "nutrition health food benefit 2175",
+  "tags": [
+    "nutrition",
+    "health",
+    "food",
+    "benefit",
+    "2175"
+  ],
+  "created": "2026-05-07T16:26:09.765630",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // draw character\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  \n  // draw arms and legs\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2 - 20, H/2 + 35);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2 + 20, H/2 + 35);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 15, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 15, H/2 + 70);\n  ctx.stroke();\n  \n  // draw food\n  ctx.fillStyle = 'green';\n  ctx.beginPath();\n  ctx.arc(W/2 + 50 + 20*Math.sin(t), H/2 - 20, 10, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.fillStyle = 'red';\n  ctx.beginPath();\n  ctx.arc(W/2 + 50 + 20*Math.cos(t), H/2 - 40, 10, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.fillStyle = 'yellow';\n  ctx.beginPath();\n  ctx.arc(W/2 + 50 + 20*Math.sin(t + Math.PI/2), H/2 - 60, 10, 0, 2*Math.PI);\n  ctx.fill();\n  \n  // draw benefit text\n  ctx.font = '20px Arial';\n  ctx.fillStyle = 'black';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'top';\n  ctx.fillText('Healthy Food', W/2, H/2 + 100);\n  \n  ctx.restore();\n}"
+}

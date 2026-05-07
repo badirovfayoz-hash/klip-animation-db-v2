@@ -1,0 +1,14 @@
+{
+  "id": "relationships_intergenerational_trauma_breaking_cycle",
+  "category": "relationships",
+  "topic": "intergenerational trauma breaking cycle",
+  "tags": [
+    "intergenerational",
+    "trauma",
+    "breaking",
+    "cycle"
+  ],
+  "created": "2026-05-07T16:25:54.455649",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  \n  // grandparent\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/4, H/2, 20, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/4, H/2 + 20);\n  ctx.lineTo(W/4, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/4, H/2 + 50);\n  ctx.lineTo(W/4 - 20, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/4, H/2 + 50);\n  ctx.lineTo(W/4 + 20, H/2 + 70);\n  ctx.stroke();\n  \n  // parent\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 20, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 20, H/2 + 70);\n  ctx.stroke();\n  \n  // child\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2 + W/4, H/2, 20, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + W/4, H/2 + 20);\n  ctx.lineTo(W/2 + W/4, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + W/4, H/2 + 50);\n  ctx.lineTo(W/2 + W/4 - 20, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + W/4, H/2 + 50);\n  ctx.lineTo(W/2 + W/4 + 20, H/2 + 70);\n  ctx.stroke();\n  \n  // breaking cycle\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 5;\n  ctx.beginPath();\n  ctx.moveTo(W/2 + W/4 + 20, H/2 + 70);\n  ctx.lineTo(W/2 + W/4 + 20 + 50*Math.cos(t), H/2 + 70 + 50*Math.sin(t));\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
