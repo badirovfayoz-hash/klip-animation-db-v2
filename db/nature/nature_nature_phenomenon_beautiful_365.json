@@ -1,0 +1,14 @@
+{
+  "id": "nature_nature_phenomenon_beautiful_365",
+  "category": "nature",
+  "topic": "nature phenomenon beautiful 365",
+  "tags": [
+    "nature",
+    "phenomenon",
+    "beautiful",
+    "365"
+  ],
+  "created": "2026-05-07T15:28:19.907292",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n\n  // sun\n  ctx.fillStyle = 'yellow';\n  ctx.beginPath();\n  ctx.arc(W / 2, H / 2 - 100, 50 + 20 * Math.sin(t), 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n\n  // clouds\n  ctx.fillStyle = 'white';\n  ctx.beginPath();\n  ctx.arc(W / 2 - 150 + 50 * Math.sin(t), H / 2 - 50, 20 + 10 * Math.cos(t), 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n\n  ctx.beginPath();\n  ctx.arc(W / 2 + 100 + 50 * Math.cos(t), H / 2 - 150, 30 + 15 * Math.sin(t), 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n\n  // trees\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.moveTo(W / 2 - 100, H - 50);\n  ctx.lineTo(W / 2 - 100, H - 150 - 50 * Math.sin(t));\n  ctx.stroke();\n\n  ctx.beginPath();\n  ctx.moveTo(W / 2 + 100, H - 50);\n  ctx.lineTo(W / 2 + 100, H - 150 - 50 * Math.cos(t));\n  ctx.stroke();\n\n  // birds\n  ctx.lineWidth = 2;\n  ctx.beginPath();\n  ctx.moveTo(W / 2 - 50 + 20 * Math.sin(t), H / 2 - 100);\n  ctx.lineTo(W / 2 - 50 + 20 * Math.sin(t) + 10 * Math.cos(t), H / 2 - 90);\n  ctx.lineTo(W / 2 - 50 + 20 * Math.sin(t) + 10 * Math.cos(t) - 10, H / 2 - 100);\n  ctx.lineTo(W / 2 - 50 + 20 * Math.sin(t) - 10, H / 2 - 90);\n  ctx.lineTo(W / 2 - 50 + 20 * Math.sin(t), H / 2 - 100);\n  ctx.stroke();\n\n  ctx.beginPath();\n  ctx.moveTo(W / 2 + 50 + 20 * Math.cos(t), H / 2 - 150);\n  ctx.lineTo(W / 2 + 50 + 20 * Math.cos(t) + 10 * Math.sin(t), H / 2 - 140);\n  ctx.lineTo(W / 2 + 50 + 20 * Math.cos(t) + 10 * Math.sin(t) - 10, H / 2 - 150);\n  ctx.lineTo(W / 2 + 50 + 20 * Math.cos(t) - 10, H / 2 - 140);\n  ctx.lineTo(W / 2 + 50 + 20 * Math.cos(t), H / 2 - 150);\n  ctx.stroke();\n\n  ctx.restore();\n}"
+}
