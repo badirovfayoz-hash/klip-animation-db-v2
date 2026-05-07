@@ -1,0 +1,16 @@
+{
+  "id": "dog_psychology_dog_waiting_years_for_deceased_owner",
+  "category": "dog_psychology",
+  "topic": "dog waiting years for deceased owner",
+  "tags": [
+    "dog",
+    "waiting",
+    "years",
+    "for",
+    "deceased",
+    "owner"
+  ],
+  "created": "2026-05-07T13:42:23.955082",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // draw dog\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 - 15, H/2 + 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 + 15, H/2 + 40);\n  ctx.stroke();\n  \n  // draw clock\n  ctx.beginPath();\n  ctx.arc(W/2 - 70, H/2 - 50, 30, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 70, H/2 - 50);\n  ctx.lineTo(W/2 - 70 + 25 * Math.sin(t), H/2 - 50 - 25 * Math.cos(t));\n  ctx.stroke();\n  \n  // draw owner's chair\n  ctx.beginPath();\n  ctx.rect(W/2 + 50, H/2 - 20, 30, 40);\n  ctx.stroke();\n  \n  // draw dog's waiting expression\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 10, H/2 + 10);\n  ctx.lineTo(W/2 - 15, H/2 + 20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 10, H/2 + 10);\n  ctx.lineTo(W/2 + 15, H/2 + 20);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
