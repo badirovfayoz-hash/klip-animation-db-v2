@@ -1,0 +1,15 @@
+{
+  "id": "emotions_emotion_expressed_body_movement_1751",
+  "category": "emotions",
+  "topic": "emotion expressed body movement 1751",
+  "tags": [
+    "emotion",
+    "expressed",
+    "body",
+    "movement",
+    "1751"
+  ],
+  "created": "2026-05-07T16:01:37.219081",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  // head\n  ctx.fillStyle = '#000';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  // body\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 100);\n  ctx.stroke();\n  // arms\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 30 + 20 * Math.sin(t), H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 30 + 20 * Math.sin(t), H/2 + 70);\n  ctx.stroke();\n  // legs\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 100);\n  ctx.lineTo(W/2 - 20 + 15 * Math.sin(t), H/2 + 130);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 100);\n  ctx.lineTo(W/2 + 20 + 15 * Math.sin(t), H/2 + 130);\n  ctx.stroke();\n  ctx.restore();\n}"
+}
