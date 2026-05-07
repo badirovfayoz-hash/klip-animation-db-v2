@@ -1,0 +1,18 @@
+{
+  "id": "psychology_maslow_pyramid_needs_from_basic_to_self_actualization",
+  "category": "psychology",
+  "topic": "maslow pyramid needs from basic to self actualization",
+  "tags": [
+    "maslow",
+    "pyramid",
+    "needs",
+    "from",
+    "basic",
+    "to",
+    "self",
+    "actualization"
+  ],
+  "created": "2026-05-07T14:02:41.401668",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // pyramid base (physiological needs)\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'white';\n  ctx.beginPath();\n  ctx.rect(W/2 - 100, H - 50, 200, 50);\n  ctx.stroke();\n  ctx.fill();\n  ctx.font = '20px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Physiological', W/2, H - 25);\n  \n  // pyramid second level (safety needs)\n  ctx.beginPath();\n  ctx.rect(W/2 - 80, H - 150, 160, 50);\n  ctx.stroke();\n  ctx.fill();\n  ctx.fillText('Safety', W/2, H - 125);\n  \n  // pyramid third level (love and belonging needs)\n  ctx.beginPath();\n  ctx.rect(W/2 - 50, H - 250, 100, 50);\n  ctx.stroke();\n  ctx.fill();\n  ctx.fillText('Love & Belonging', W/2, H - 225);\n  \n  // pyramid fourth level (esteem needs)\n  ctx.beginPath();\n  ctx.rect(W/2 - 20, H - 350, 40, 50);\n  ctx.stroke();\n  ctx.fill();\n  ctx.fillText('Esteem', W/2, H - 325);\n  \n  // pyramid top (self-actualization needs)\n  ctx.beginPath();\n  ctx.arc(W/2, H - 420 + 20 * Math.sin(t), 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.fill();\n  ctx.fillText('Self-Actualization', W/2, H - 395 + 20 * Math.sin(t));\n  \n  ctx.restore();\n}"
+}

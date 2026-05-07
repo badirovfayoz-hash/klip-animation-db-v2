@@ -1,0 +1,15 @@
+{
+  "id": "dog_psychology_dog_remembering_past_trauma_flinching",
+  "category": "dog_psychology",
+  "topic": "dog remembering past trauma flinching",
+  "tags": [
+    "dog",
+    "remembering",
+    "past",
+    "trauma",
+    "flinching"
+  ],
+  "created": "2026-05-07T14:02:31.634754",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 30, H/2 - 60);\n  ctx.lineTo(W/2 - 30, H/2 - 30);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 30, H/2 - 60);\n  ctx.lineTo(W/2 + 30, H/2 - 30);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 20, H/2 + 20);\n  ctx.lineTo(W/2 + 20, H/2 + 20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 80);\n  ctx.lineTo(W/2, H/2 - 100 + 20 * Math.sin(t));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 40 + 10 * Math.sin(t), H/2);\n  ctx.lineTo(W/2 - 60 + 10 * Math.sin(t), H/2 + 20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 40 - 10 * Math.sin(t), H/2);\n  ctx.lineTo(W/2 + 60 - 10 * Math.sin(t), H/2 + 20);\n  ctx.stroke();\n  ctx.restore();\n}"
+}
