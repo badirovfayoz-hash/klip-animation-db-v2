@@ -1,0 +1,16 @@
+{
+  "id": "philosophy_philosophy_reflection_on_life_truth_344",
+  "category": "philosophy",
+  "topic": "philosophy reflection on life truth 344",
+  "tags": [
+    "philosophy",
+    "reflection",
+    "on",
+    "life",
+    "truth",
+    "344"
+  ],
+  "created": "2026-05-07T16:24:14.786481",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // stick figure\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // arms\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2 - 30 + 10 * Math.sin(t), H/2 + 60);\n  ctx.stroke();\n  \n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2 + 30 + 10 * Math.sin(t), H/2 + 60);\n  ctx.stroke();\n  \n  // legs\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 60);\n  ctx.lineTo(W/2 - 20 + 10 * Math.cos(t), H/2 + 100);\n  ctx.stroke();\n  \n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 60);\n  ctx.lineTo(W/2 + 20 + 10 * Math.cos(t), H/2 + 100);\n  ctx.stroke();\n  \n  // thought bubble\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 50, 30 + 10 * Math.sin(t), 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // text\n  ctx.font = '20px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('?', W/2, H/2 - 50);\n  \n  ctx.restore();\n}"
+}
