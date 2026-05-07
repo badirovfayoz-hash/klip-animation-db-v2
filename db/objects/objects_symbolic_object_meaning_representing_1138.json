@@ -1,0 +1,15 @@
+{
+  "id": "objects_symbolic_object_meaning_representing_1138",
+  "category": "objects",
+  "topic": "symbolic object meaning representing 1138",
+  "tags": [
+    "symbolic",
+    "object",
+    "meaning",
+    "representing",
+    "1138"
+  ],
+  "created": "2026-05-07T16:09:02.255461",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.font = '48px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('1138', W/2, H/2);\n  ctx.beginPath();\n  ctx.arc(W/2 + 70 * Math.sin(t), H/2, 10, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 + 70 * Math.sin(t), H/2, 5, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.restore();\n}"
+}
