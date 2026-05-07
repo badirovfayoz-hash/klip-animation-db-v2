@@ -1,0 +1,17 @@
+{
+  "id": "dog_psychology_dog_behavior_pattern_544_natural_instinct_showing",
+  "category": "dog_psychology",
+  "topic": "dog behavior pattern 544 natural instinct showing",
+  "tags": [
+    "dog",
+    "behavior",
+    "pattern",
+    "544",
+    "natural",
+    "instinct",
+    "showing"
+  ],
+  "created": "2026-05-07T15:52:47.190535",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // dog body\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2 + Math.sin(t) * 50, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // dog head\n  ctx.beginPath();\n  ctx.arc(W/2 + Math.sin(t) * 50, H/2 - 30, 10, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // front leg\n  ctx.beginPath();\n  ctx.moveTo(W/2 + Math.sin(t) * 50, H/2 + 20);\n  ctx.lineTo(W/2 + Math.sin(t) * 50 - 20, H/2 + 50);\n  ctx.stroke();\n  \n  // back leg\n  ctx.beginPath();\n  ctx.moveTo(W/2 + Math.sin(t) * 50, H/2 + 20);\n  ctx.lineTo(W/2 + Math.sin(t) * 50 + 20, H/2 + 50);\n  ctx.stroke();\n  \n  // tail\n  ctx.beginPath();\n  ctx.moveTo(W/2 + Math.sin(t) * 50, H/2 + 50);\n  ctx.lineTo(W/2 + Math.sin(t) * 50 + Math.cos(t) * 30, H/2 + 70);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
