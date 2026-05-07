@@ -1,0 +1,17 @@
+{
+  "id": "dog_psychology_dog_loyal_to_elderly_person_daily_walk",
+  "category": "dog_psychology",
+  "topic": "dog loyal to elderly person daily walk",
+  "tags": [
+    "dog",
+    "loyal",
+    "to",
+    "elderly",
+    "person",
+    "daily",
+    "walk"
+  ],
+  "created": "2026-05-07T07:42:49.359943",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // draw elderly person\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.arc(W/2 - 50, H/2 + 20, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 + 40);\n  ctx.lineTo(W/2 - 50, H/2 + 80);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 + 60);\n  ctx.lineTo(W/2 - 70, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 + 60);\n  ctx.lineTo(W/2 - 30, H/2 + 50);\n  ctx.stroke();\n  \n  // draw dog\n  ctx.beginPath();\n  ctx.arc(W/2 + 50 + 20 * Math.sin(t), H/2 + 20, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50 + 20 * Math.sin(t), H/2 + 40);\n  ctx.lineTo(W/2 + 50 + 20 * Math.sin(t), H/2 + 60);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50 + 20 * Math.sin(t), H/2 + 50);\n  ctx.lineTo(W/2 + 30 + 20 * Math.sin(t), H/2 + 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50 + 20 * Math.sin(t), H/2 + 50);\n  ctx.lineTo(W/2 + 70 + 20 * Math.sin(t), H/2 + 40);\n  ctx.stroke();\n  \n  // draw leash\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 + 80);\n  ctx.lineTo(W/2 + 50 + 20 * Math.sin(t), H/2 + 60);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
