@@ -1,0 +1,14 @@
+{
+  "id": "animals_cat_hunting_stalking_prey",
+  "category": "animals",
+  "topic": "cat hunting stalking prey",
+  "tags": [
+    "cat",
+    "hunting",
+    "stalking",
+    "prey"
+  ],
+  "created": "2026-05-06T16:10:49.207602",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // cat\n  ctx.beginPath();\n  ctx.arc(W/2 + Math.sin(t) * 50, H/2, 30, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + Math.sin(t) * 50, H/2 + 30);\n  ctx.lineTo(W/2 + Math.sin(t) * 50, H/2 + 60);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + Math.sin(t) * 50, H/2 + 50);\n  ctx.lineTo(W/2 + Math.sin(t) * 50 - 20, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + Math.sin(t) * 50, H/2 + 50);\n  ctx.lineTo(W/2 + Math.sin(t) * 50 + 20, H/2 + 70);\n  ctx.stroke();\n  \n  // prey (mouse)\n  ctx.beginPath();\n  ctx.arc(W/2 + 100 + Math.cos(t) * 20, H/2 + 100, 10, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100 + Math.cos(t) * 20, H/2 + 110);\n  ctx.lineTo(W/2 + 100 + Math.cos(t) * 20, H/2 + 120);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

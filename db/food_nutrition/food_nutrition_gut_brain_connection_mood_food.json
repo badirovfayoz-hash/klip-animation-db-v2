@@ -1,0 +1,15 @@
+{
+  "id": "food_nutrition_gut_brain_connection_mood_food",
+  "category": "food_nutrition",
+  "topic": "gut brain connection mood food",
+  "tags": [
+    "gut",
+    "brain",
+    "connection",
+    "mood",
+    "food"
+  ],
+  "created": "2026-05-06T16:16:40.900926",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // brain\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 50, 50, 0, 2 * Math.PI);\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  \n  // gut\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 50, 50, 0, 2 * Math.PI);\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  \n  // connection\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 20);\n  ctx.lineTo(W/2, H/2 + 20);\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  \n  // mood food\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Mood', W/2 - 75 + 30 * Math.sin(t), H/2 - 50);\n  ctx.fillText('Food', W/2 + 45 + 30 * Math.sin(t), H/2 - 50);\n  \n  // stick figure\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 150, 20, 0, 2 * Math.PI);\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 170);\n  ctx.lineTo(W/2, H/2 + 200);\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 190);\n  ctx.lineTo(W/2 - 30, H/2 + 220);\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 190);\n  ctx.lineTo(W/2 + 30, H/2 + 220);\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

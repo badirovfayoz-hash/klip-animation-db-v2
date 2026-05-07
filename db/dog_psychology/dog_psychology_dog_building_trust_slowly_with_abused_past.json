@@ -1,0 +1,17 @@
+{
+  "id": "dog_psychology_dog_building_trust_slowly_with_abused_past",
+  "category": "dog_psychology",
+  "topic": "dog building trust slowly with abused past",
+  "tags": [
+    "dog",
+    "building",
+    "trust",
+    "slowly",
+    "with",
+    "abused",
+    "past"
+  ],
+  "created": "2026-05-06T16:11:56.251947",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // dog\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 20, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 20, H/2 + 70);\n  ctx.stroke();\n  \n  // tail\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 70);\n  ctx.lineTo(W/2 + 30 + 10 * Math.sin(t), H/2 + 90);\n  ctx.stroke();\n  \n  // owner's hand\n  ctx.lineWidth = 5;\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50, H/2);\n  ctx.lineTo(W/2 + 50, H/2 - 30);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50, H/2 - 30);\n  ctx.lineTo(W/2 + 70, H/2 - 30);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50, H/2 - 30);\n  ctx.lineTo(W/2 + 30, H/2 - 30);\n  ctx.stroke();\n  \n  // distance between dog and owner's hand\n  let distance = 100 + 20 * Math.sin(t);\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50, H/2 - 30);\n  ctx.lineTo(W/2 + 50, H/2 - distance);\n  ctx.strokeStyle = 'gray';\n  ctx.stroke();\n  ctx.strokeStyle = 'black';\n  \n  ctx.restore();\n}"
+}

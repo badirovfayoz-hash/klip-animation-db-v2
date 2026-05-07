@@ -1,0 +1,14 @@
+{
+  "id": "philosophy_karma_actions_returning_consequences",
+  "category": "philosophy",
+  "topic": "karma actions returning consequences",
+  "tags": [
+    "karma",
+    "actions",
+    "returning",
+    "consequences"
+  ],
+  "created": "2026-05-06T15:58:51.470585",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // character\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  \n  // action line\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 50 + 20*Math.sin(t), H/2 + 80);\n  ctx.stroke();\n  \n  // consequence line\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 50 - 20*Math.sin(t), H/2 + 80);\n  ctx.stroke();\n  \n  // consequence circle\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2 - 50 - 20*Math.sin(t), H/2 + 80, 10, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

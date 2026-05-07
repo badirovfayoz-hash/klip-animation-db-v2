@@ -1,0 +1,15 @@
+{
+  "id": "book_analysis_little_prince_antoine_childhood_wisdom",
+  "category": "book_analysis",
+  "topic": "little prince antoine childhood wisdom",
+  "tags": [
+    "little",
+    "prince",
+    "antoine",
+    "childhood",
+    "wisdom"
+  ],
+  "created": "2026-05-06T16:10:07.124816",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // little prince\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 - 15, H/2 + 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 + 15, H/2 + 40);\n  ctx.stroke();\n  \n  // rose\n  ctx.beginPath();\n  ctx.arc(W/2 + 50, H/2, 15 + 5*Math.sin(t), 0, 2*Math.PI);\n  ctx.stroke();\n  \n  // stars\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2 - 50, H/2 - 50, 5, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2 + 50, H/2 - 50, 5, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 100, 5, 0, 2*Math.PI);\n  ctx.fill();\n  \n  ctx.restore();\n}"
+}

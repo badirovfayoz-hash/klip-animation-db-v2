@@ -1,0 +1,15 @@
+{
+  "id": "psychology_boundaries_saying_no_with_love",
+  "category": "psychology",
+  "topic": "boundaries saying no with love",
+  "tags": [
+    "boundaries",
+    "saying",
+    "no",
+    "with",
+    "love"
+  ],
+  "created": "2026-05-06T16:20:33.918891",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // head\n  ctx.fillStyle = '#000';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2*Math.PI);\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  \n  // body\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2, H/2 + 150);\n  ctx.stroke();\n  \n  // arms\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 100);\n  ctx.lineTo(W/2 - 50, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 100);\n  ctx.lineTo(W/2 + 50, H/2 + 70);\n  ctx.stroke();\n  \n  // hands\n  ctx.fillStyle = '#000';\n  ctx.beginPath();\n  ctx.arc(W/2 - 50, H/2 + 70, 10, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2 + 50, H/2 + 70, 10, 0, 2*Math.PI);\n  ctx.fill();\n  \n  // stop sign\n  ctx.fillStyle = '#ff0000';\n  ctx.globalAlpha = 0.5;\n  ctx.beginPath();\n  ctx.rect(W/2 - 75, H/2 - 50, 150, 150);\n  ctx.fill();\n  ctx.globalAlpha = 1;\n  ctx.fillStyle = '#000';\n  ctx.beginPath();\n  ctx.font = '50px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillText('NO', W/2, H/2 + 25);\n  \n  // heart\n  ctx.fillStyle = '#ff69b4';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 100 + 50*Math.sin(t), 20, 0, 2*Math.PI);\n  ctx.fill();\n  \n  ctx.restore();\n}"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "psychology_freud_iceberg_unconscious_mind_hidden",
+  "category": "psychology",
+  "topic": "freud iceberg unconscious mind hidden",
+  "tags": [
+    "freud",
+    "iceberg",
+    "unconscious",
+    "mind",
+    "hidden"
+  ],
+  "created": "2026-05-06T16:17:41.015422",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.fillStyle = 'black';\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillText('CS', W/2, H/2);\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 100, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.fillText('PC', W/2, H/2 + 75);\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 150, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.fillStyle = 'black';\n  ctx.font = '36px Arial';\n  ctx.fillText('UC', W/2, H/2 + 150 + 20 * Math.sin(t));\n  ctx.restore();\n}"
+}

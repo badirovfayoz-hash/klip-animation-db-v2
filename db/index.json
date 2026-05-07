@@ -1,21 +1,89 @@
 {
   "version": "2.0",
-  "generated": "2026-05-05T21:49:06.090443",
-  "total": 0,
+  "generated": "2026-05-06T15:59:38.908307",
+  "total": 10,
   "categories": {
-    "dog_psychology": [],
-    "philosophy": [],
-    "psychology": [],
-    "food_nutrition": [],
-    "book_analysis": [],
+    "dog_psychology": [
+      {
+        "id": "dog_psychology_dog_calming_another_stressed_dog",
+        "topic": "dog calming another stressed dog",
+        "file": "dog_psychology/dog_psychology_dog_calming_another_stressed_dog.json",
+        "category": "dog_psychology"
+      },
+      {
+        "id": "dog_psychology_dog_feeling_abandoned_waiting_at_door_alone",
+        "topic": "dog feeling abandoned waiting at door alone",
+        "file": "dog_psychology/dog_psychology_dog_feeling_abandoned_waiting_at_door_alone.json",
+        "category": "dog_psychology"
+      }
+    ],
+    "philosophy": [
+      {
+        "id": "philosophy_interconnectedness_all_things_related",
+        "topic": "interconnectedness all things related",
+        "file": "philosophy/philosophy_interconnectedness_all_things_related.json",
+        "category": "philosophy"
+      },
+      {
+        "id": "philosophy_karma_actions_returning_consequences",
+        "topic": "karma actions returning consequences",
+        "file": "philosophy/philosophy_karma_actions_returning_consequences.json",
+        "category": "philosophy"
+      }
+    ],
+    "psychology": [
+      {
+        "id": "psychology_confirmation_bias_seeing_only_what_believe",
+        "topic": "confirmation bias seeing only what believe",
+        "file": "psychology/psychology_confirmation_bias_seeing_only_what_believe.json",
+        "category": "psychology"
+      }
+    ],
+    "food_nutrition": [
+      {
+        "id": "food_nutrition_food_as_medicine_hippocrates_said",
+        "topic": "food as medicine hippocrates said",
+        "file": "food_nutrition/food_nutrition_food_as_medicine_hippocrates_said.json",
+        "category": "food_nutrition"
+      }
+    ],
+    "book_analysis": [
+      {
+        "id": "book_analysis_meditations_marcus_aurelius_stoic_journal",
+        "topic": "meditations marcus aurelius stoic journal",
+        "file": "book_analysis/book_analysis_meditations_marcus_aurelius_stoic_journal.json",
+        "category": "book_analysis"
+      }
+    ],
     "humans": [],
-    "emotions": [],
+    "emotions": [
+      {
+        "id": "emotions_compassionate_caring_empathy",
+        "topic": "compassionate caring empathy",
+        "file": "emotions/emotions_compassionate_caring_empathy.json",
+        "category": "emotions"
+      }
+    ],
     "animals": [],
-    "nature": [],
+    "nature": [
+      {
+        "id": "nature_rainbow_promise_after_rain",
+        "topic": "rainbow promise after rain",
+        "file": "nature/nature_rainbow_promise_after_rain.json",
+        "category": "nature"
+      }
+    ],
     "objects": [],
     "events": [],
     "relationships": [],
     "abstract": [],
-    "backgrounds": []
+    "backgrounds": [
+      {
+        "id": "backgrounds_office_desk_working",
+        "topic": "office desk working",
+        "file": "backgrounds/backgrounds_office_desk_working.json",
+        "category": "backgrounds"
+      }
+    ]
   }
 }

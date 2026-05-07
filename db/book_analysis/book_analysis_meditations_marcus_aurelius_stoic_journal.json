@@ -1,0 +1,15 @@
+{
+  "id": "book_analysis_meditations_marcus_aurelius_stoic_journal",
+  "category": "book_analysis",
+  "topic": "meditations marcus aurelius stoic journal",
+  "tags": [
+    "meditations",
+    "marcus",
+    "aurelius",
+    "stoic",
+    "journal"
+  ],
+  "created": "2026-05-06T15:58:36.584090",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  \n  // draw stick figure meditating\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 30, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 30, H/2 + 70);\n  ctx.stroke();\n  \n  // draw journal\n  ctx.fillStyle = 'black';\n  ctx.fillRect(W/2 - 50, H/2 + 120, 100, 50);\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(W/2 - 45, H/2 + 125, 90, 40);\n  \n  // animate stick figure's head\n  ctx.beginPath();\n  ctx.arc(W/2 + Math.sin(t) * 10, H/2 + 20 + Math.cos(t) * 10, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  ctx.restore();\n}"
+}

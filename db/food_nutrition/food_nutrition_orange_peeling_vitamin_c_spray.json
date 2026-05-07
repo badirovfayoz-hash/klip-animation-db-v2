@@ -1,0 +1,15 @@
+{
+  "id": "food_nutrition_orange_peeling_vitamin_c_spray",
+  "category": "food_nutrition",
+  "topic": "orange peeling vitamin c spray",
+  "tags": [
+    "orange",
+    "peeling",
+    "vitamin",
+    "c",
+    "spray"
+  ],
+  "created": "2026-05-06T16:10:35.231167",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // draw orange\n  ctx.fillStyle = '#ffa07a';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // draw peel\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // draw peeling effect\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50 * Math.cos(t), H/2 + 50 * Math.sin(t));\n  ctx.lineTo(W/2 + 70 * Math.cos(t), H/2 + 70 * Math.sin(t));\n  ctx.stroke();\n  \n  // draw vitamin C spray\n  ctx.fillStyle = '#ff8c00';\n  ctx.beginPath();\n  ctx.arc(W/2 + 100 * Math.cos(3*t), H/2 + 100 * Math.sin(3*t), 10, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  ctx.restore();\n}"
+}

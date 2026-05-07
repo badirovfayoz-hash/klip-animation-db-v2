@@ -1,0 +1,14 @@
+{
+  "id": "philosophy_courage_action_despite_fear",
+  "category": "philosophy",
+  "topic": "courage action despite fear",
+  "tags": [
+    "courage",
+    "action",
+    "despite",
+    "fear"
+  ],
+  "created": "2026-05-06T16:16:27.935610",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // character\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  \n  // fear cloud\n  ctx.beginPath();\n  ctx.arc(W/2 - 50 + 20*Math.sin(t), H/2, 30, 0, 2*Math.PI);\n  ctx.stroke();\n  \n  // courage arrow\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2);\n  ctx.lineTo(W/2 + 50 + 20*Math.cos(t), H/2);\n  ctx.stroke();\n  \n  // legs\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2 + 10, H);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

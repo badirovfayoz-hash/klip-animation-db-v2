@@ -1,0 +1,13 @@
+{
+  "id": "relationships_family_dinner_gathering",
+  "category": "relationships",
+  "topic": "family dinner gathering",
+  "tags": [
+    "family",
+    "dinner",
+    "gathering"
+  ],
+  "created": "2026-05-06T16:10:28.481167",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // table\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.rect(W/2-100, H/2-50, 200, 100);\n  ctx.stroke();\n  \n  // mom\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2-120, H/2-80, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2-120, H/2-60);\n  ctx.lineTo(W/2-120, H/2-40);\n  ctx.lineTo(W/2-100, H/2-40);\n  ctx.stroke();\n  \n  // dad\n  ctx.beginPath();\n  ctx.arc(W/2+120, H/2-80, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2+120, H/2-60);\n  ctx.lineTo(W/2+120, H/2-40);\n  ctx.lineTo(W/2+100, H/2-40);\n  ctx.stroke();\n  \n  // kid1\n  ctx.beginPath();\n  ctx.arc(W/2-80, H/2-20+30*Math.sin(t), 15, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2-80, H/2-20+30*Math.sin(t)-15);\n  ctx.lineTo(W/2-80, H/2-20+30*Math.sin(t));\n  ctx.lineTo(W/2-60, H/2-20+30*Math.sin(t));\n  ctx.stroke();\n  \n  // kid2\n  ctx.beginPath();\n  ctx.arc(W/2+80, H/2-20+30*Math.cos(t), 15, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2+80, H/2-20+30*Math.cos(t)-15);\n  ctx.lineTo(W/2+80, H/2-20+30*Math.cos(t));\n  ctx.lineTo(W/2+60, H/2-20+30*Math.cos(t));\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

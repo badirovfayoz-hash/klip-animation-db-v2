@@ -1,0 +1,15 @@
+{
+  "id": "psychology_cognitive_dissonance_belief_action_conflict",
+  "category": "psychology",
+  "topic": "cognitive dissonance belief action conflict",
+  "tags": [
+    "cognitive",
+    "dissonance",
+    "belief",
+    "action",
+    "conflict"
+  ],
+  "created": "2026-05-06T16:15:19.210634",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // character\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  \n  // conflicting beliefs\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 30, H/2);\n  ctx.lineTo(W/2 - 30 + 20*Math.sin(t), H/2 - 20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 30, H/2);\n  ctx.lineTo(W/2 + 30 + 20*Math.cos(t), H/2 + 20);\n  ctx.stroke();\n  \n  // action\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2, H/2 + 30 + 20*Math.sin(2*t));\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

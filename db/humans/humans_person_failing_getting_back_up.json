@@ -1,0 +1,15 @@
+{
+  "id": "humans_person_failing_getting_back_up",
+  "category": "humans",
+  "topic": "person failing getting back up",
+  "tags": [
+    "person",
+    "failing",
+    "getting",
+    "back",
+    "up"
+  ],
+  "created": "2026-05-06T16:20:41.182171",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // stick figure\n  let x = W / 2;\n  let y = H / 2;\n  let headRadius = 20;\n  let bodyLength = 50;\n  let armLength = 30;\n  let legLength = 40;\n  \n  // falling and getting up motion\n  let fall = Math.sin(t);\n  let getUp = Math.sin(t + Math.PI);\n  \n  // head\n  ctx.beginPath();\n  ctx.arc(x, y - bodyLength / 2 + fall * 10, headRadius, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // body\n  ctx.beginPath();\n  ctx.moveTo(x, y - bodyLength / 2 + fall * 10 + headRadius);\n  ctx.lineTo(x, y - bodyLength / 2 + fall * 10 + headRadius + bodyLength * getUp);\n  ctx.stroke();\n  \n  // arms\n  ctx.beginPath();\n  ctx.moveTo(x, y - bodyLength / 2 + fall * 10 + headRadius + bodyLength * getUp / 2);\n  ctx.lineTo(x - armLength, y - bodyLength / 2 + fall * 10 + headRadius + bodyLength * getUp / 2);\n  ctx.stroke();\n  \n  ctx.beginPath();\n  ctx.moveTo(x, y - bodyLength / 2 + fall * 10 + headRadius + bodyLength * getUp / 2);\n  ctx.lineTo(x + armLength, y - bodyLength / 2 + fall * 10 + headRadius + bodyLength * getUp / 2);\n  ctx.stroke();\n  \n  // legs\n  ctx.beginPath();\n  ctx.moveTo(x, y - bodyLength / 2 + fall * 10 + headRadius + bodyLength * getUp);\n  ctx.lineTo(x - legLength / 2, y - bodyLength / 2 + fall * 10 + headRadius + bodyLength * getUp + legLength * getUp);\n  ctx.stroke();\n  \n  ctx.beginPath();\n  ctx.moveTo(x, y - bodyLength / 2 + fall * 10 + headRadius + bodyLength * getUp);\n  ctx.lineTo(x + legLength / 2, y - bodyLength / 2 + fall * 10 + headRadius + bodyLength * getUp + legLength * getUp);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

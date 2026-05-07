@@ -1,0 +1,15 @@
+{
+  "id": "dog_psychology_dog_asserting_dominance_standing_tall",
+  "category": "dog_psychology",
+  "topic": "dog asserting dominance standing tall",
+  "tags": [
+    "dog",
+    "asserting",
+    "dominance",
+    "standing",
+    "tall"
+  ],
+  "created": "2026-05-06T16:13:57.212046",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 20 * Math.sin(t), 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 20 * Math.sin(t) + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 30 * Math.sin(t), H/2 + 80);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 30 * Math.sin(t), H/2 + 80);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 15 * Math.sin(t), H/2 - 10 * Math.sin(t));\n  ctx.lineTo(W/2 + 15 * Math.sin(t), H/2 - 10 * Math.sin(t));\n  ctx.stroke();\n  ctx.restore();\n}"
+}

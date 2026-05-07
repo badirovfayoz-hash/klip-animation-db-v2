@@ -1,0 +1,14 @@
+{
+  "id": "humans_person_waving_goodbye_departure",
+  "category": "humans",
+  "topic": "person waving goodbye departure",
+  "tags": [
+    "person",
+    "waving",
+    "goodbye",
+    "departure"
+  ],
+  "created": "2026-05-06T16:13:07.906881",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  \n  // body\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // arm\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2 + 40 + 20 * Math.sin(t), H/2 + 60);\n  ctx.stroke();\n  \n  // hand\n  ctx.beginPath();\n  ctx.arc(W/2 + 40 + 20 * Math.sin(t), H/2 + 60, 10, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // leg\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 100);\n  ctx.stroke();\n  \n  // other leg\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2 + 10, H/2 + 100);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "food_nutrition_fasting_cellular_cleaning_autophagy",
+  "category": "food_nutrition",
+  "topic": "fasting cellular cleaning autophagy",
+  "tags": [
+    "fasting",
+    "cellular",
+    "cleaning",
+    "autophagy"
+  ],
+  "created": "2026-05-06T16:13:29.044746",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // cell\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // autophagy waves\n  ctx.lineWidth = 2;\n  for (let i = 0; i < 5; i++) {\n    ctx.beginPath();\n    ctx.arc(W/2, H/2, 20 + i * 10, 0, 2 * Math.PI);\n    ctx.stroke();\n    ctx.setLineDash([10, 10]);\n    ctx.beginPath();\n    ctx.arc(W/2, H/2, 20 + i * 10, 0, 2 * Math.PI);\n    ctx.stroke();\n    ctx.setLineDash([]);\n    ctx.rotate(Math.sin(t + i) * 0.1);\n  }\n  \n  // mitochondria\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2 - 30, H/2, 10, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 + 30, H/2, 10, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // lysosome\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 30, 10, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // cleaning\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 2;\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 + Math.sin(t) * 20, H/2 + 30 + Math.cos(t) * 20);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

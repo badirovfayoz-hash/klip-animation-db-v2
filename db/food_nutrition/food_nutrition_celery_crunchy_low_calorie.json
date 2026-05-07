@@ -1,0 +1,14 @@
+{
+  "id": "food_nutrition_celery_crunchy_low_calorie",
+  "category": "food_nutrition",
+  "topic": "celery crunchy low calorie",
+  "tags": [
+    "celery",
+    "crunchy",
+    "low",
+    "calorie"
+  ],
+  "created": "2026-05-06T16:14:24.648757",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  \n  // draw celery\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2);\n  ctx.lineTo(W/2 + 50, H/2 + 20 + 20 * Math.sin(t));\n  ctx.lineTo(W/2 + 30, H/2 + 60);\n  ctx.lineTo(W/2 - 30, H/2 + 60);\n  ctx.lineTo(W/2 - 50, H/2 + 20 + 20 * Math.sin(t));\n  ctx.closePath();\n  ctx.stroke();\n  ctx.fill();\n  \n  // draw stick figure eating\n  ctx.beginPath();\n  ctx.arc(W/2 - 100, H/2 - 50, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 - 30);\n  ctx.lineTo(W/2 - 100, H/2 + 20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 - 10);\n  ctx.lineTo(W/2 - 80, H/2);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 - 10);\n  ctx.lineTo(W/2 - 120, H/2);\n  ctx.stroke();\n  \n  // draw text\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Crunchy', W/2, H/2 + 100);\n  ctx.fillText('Low Calorie', W/2, H/2 + 130);\n  \n  ctx.restore();\n}"
+}

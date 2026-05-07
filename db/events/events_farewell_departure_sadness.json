@@ -1,0 +1,13 @@
+{
+  "id": "events_farewell_departure_sadness",
+  "category": "events",
+  "topic": "farewell departure sadness",
+  "tags": [
+    "farewell",
+    "departure",
+    "sadness"
+  ],
+  "created": "2026-05-06T16:16:59.865317",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // character\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 - 20, H/2 + 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 + 20, H/2 + 40);\n  ctx.stroke();\n  \n  // sad face\n  ctx.beginPath();\n  ctx.arc(W/2 - 10, H/2 - 10, 5, 0, Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 + 10, H/2 - 10, 5, 0, Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 15, H/2);\n  ctx.lineTo(W/2 + 15, H/2);\n  ctx.stroke();\n  \n  // waving arm\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 - 30 + 20 * Math.sin(t), H/2 + 50);\n  ctx.stroke();\n  \n  // falling tear\n  ctx.beginPath();\n  ctx.arc(W/2 - 20 + 10 * Math.sin(t), H/2 + 60 + 10 * Math.cos(t), 5, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  ctx.restore();\n}"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "animals_cat_stretching_morning_lazily",
+  "category": "animals",
+  "topic": "cat stretching morning lazily",
+  "tags": [
+    "cat",
+    "stretching",
+    "morning",
+    "lazily"
+  ],
+  "created": "2026-05-06T16:12:38.741242",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 20 + 30 * (1 + Math.sin(t)));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2 - 20 - 10 * Math.sin(t), H/2 + 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2 + 20 + 10 * Math.sin(t), H/2 + 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50 + 30 * (1 + Math.sin(t)));\n  ctx.lineTo(W/2 - 10 - 5 * Math.cos(t), H/2 + 70 + 20 * Math.sin(t));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50 + 30 * (1 + Math.sin(t)));\n  ctx.lineTo(W/2 + 10 + 5 * Math.cos(t), H/2 + 70 + 20 * Math.sin(t));\n  ctx.stroke();\n  ctx.restore();\n}"
+}

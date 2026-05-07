@@ -1,0 +1,14 @@
+{
+  "id": "book_analysis_sapiens_human_cognitive_revolution",
+  "category": "book_analysis",
+  "topic": "sapiens human cognitive revolution",
+  "tags": [
+    "sapiens",
+    "human",
+    "cognitive",
+    "revolution"
+  ],
+  "created": "2026-05-06T16:17:27.445934",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // Draw stick figure\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 20, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 20, H/2 + 70);\n  ctx.stroke();\n  \n  // Draw thought bubble\n  ctx.beginPath();\n  ctx.arc(W/2 + 50 + 20 * Math.sin(t), H/2 - 20 - 10 * Math.cos(t), 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50, H/2 - 20);\n  ctx.lineTo(W/2 + 50 + 20 * Math.sin(t), H/2 - 20 - 10 * Math.cos(t));\n  ctx.stroke();\n  \n  // Draw fire\n  ctx.beginPath();\n  ctx.arc(W/2 - 50, H/2 + 100 + 10 * Math.sin(t), 10, 0, 2 * Math.PI);\n  ctx.fillStyle = 'orange';\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2 - 50, H/2 + 100 + 10 * Math.sin(t), 5, 0, 2 * Math.PI);\n  ctx.fillStyle = 'yellow';\n  ctx.fill();\n  \n  ctx.restore();\n}"
+}

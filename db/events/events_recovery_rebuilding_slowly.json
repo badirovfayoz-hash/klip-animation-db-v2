@@ -1,0 +1,13 @@
+{
+  "id": "events_recovery_rebuilding_slowly",
+  "category": "events",
+  "topic": "recovery rebuilding slowly",
+  "tags": [
+    "recovery",
+    "rebuilding",
+    "slowly"
+  ],
+  "created": "2026-05-06T16:13:36.148832",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // broken pieces\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50 + 20*Math.sin(t), H/2);\n  ctx.lineTo(W/2 + 20*Math.cos(t), H/2 + 50);\n  ctx.stroke();\n  \n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50 + 20*Math.sin(t), H/2);\n  ctx.lineTo(W/2 - 20*Math.cos(t), H/2 + 50);\n  ctx.stroke();\n  \n  // slowly rebuilding\n  let rebuildProgress = Math.sin(t) * 0.5 + 0.5;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20 + 30*rebuildProgress, 0, 2*Math.PI);\n  ctx.stroke();\n  \n  // character\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 70, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 50);\n  ctx.lineTo(W/2, H/2 - 30);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 40);\n  ctx.lineTo(W/2 - 20, H/2 - 10);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 40);\n  ctx.lineTo(W/2 + 20, H/2 - 10);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
