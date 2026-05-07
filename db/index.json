@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "generated": "2026-05-07T14:06:39.498691",
-  "total": 479,
+  "generated": "2026-05-07T14:07:51.320035",
+  "total": 480,
   "categories": {
     "dog_psychology": [
       {
@@ -1710,6 +1710,12 @@
         "id": "humans_person_celebrating_small_win",
         "topic": "person celebrating small win",
         "file": "humans/humans_person_celebrating_small_win.json",
+        "category": "humans"
+      },
+      {
+        "id": "humans_person_cooking_with_love_family",
+        "topic": "person cooking with love family",
+        "file": "humans/humans_person_cooking_with_love_family.json",
         "category": "humans"
       },
       {
