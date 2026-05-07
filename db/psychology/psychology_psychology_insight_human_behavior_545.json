@@ -1,0 +1,15 @@
+{
+  "id": "psychology_psychology_insight_human_behavior_545",
+  "category": "psychology",
+  "topic": "psychology insight human behavior 545",
+  "tags": [
+    "psychology",
+    "insight",
+    "human",
+    "behavior",
+    "545"
+  ],
+  "created": "2026-05-07T15:50:45.513402",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // brain\n  ctx.fillStyle = 'white';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 100, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  // thought bubble\n  ctx.beginPath();\n  ctx.arc(W/2 + 150 * Math.sin(t), H/2 - 50 * Math.cos(t), 50, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  // stick figure\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 150, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 170);\n  ctx.lineTo(W/2, H/2 + 250);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 200);\n  ctx.lineTo(W/2 - 50, H/2 + 220);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 200);\n  ctx.lineTo(W/2 + 50, H/2 + 220);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

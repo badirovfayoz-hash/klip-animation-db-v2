@@ -1,0 +1,14 @@
+{
+  "id": "abstract_abstract_concept_visualized_1379",
+  "category": "abstract",
+  "topic": "abstract concept visualized 1379",
+  "tags": [
+    "abstract",
+    "concept",
+    "visualized",
+    "1379"
+  ],
+  "created": "2026-05-07T15:51:08.031858",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  for (let i = 0; i < 10; i++) {\n    ctx.beginPath();\n    ctx.arc(W / 2 + Math.sin(t + i) * 100, H / 2 + Math.cos(t + i * 1.5) * 100, 20 + Math.sin(t * 2 + i) * 10, 0, Math.PI * 2);\n    ctx.stroke();\n  }\n  ctx.beginPath();\n  ctx.moveTo(W / 2, H / 2);\n  ctx.lineTo(W / 2 + Math.sin(t) * 200, H / 2 + Math.cos(t) * 200);\n  ctx.stroke();\n  ctx.restore();\n}"
+}
