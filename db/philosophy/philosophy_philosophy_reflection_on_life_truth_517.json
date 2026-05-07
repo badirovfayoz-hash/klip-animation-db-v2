@@ -1,0 +1,16 @@
+{
+  "id": "philosophy_philosophy_reflection_on_life_truth_517",
+  "category": "philosophy",
+  "topic": "philosophy reflection on life truth 517",
+  "tags": [
+    "philosophy",
+    "reflection",
+    "on",
+    "life",
+    "truth",
+    "517"
+  ],
+  "created": "2026-05-07T15:39:02.597646",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // draw a stick figure\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W / 2, H / 2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W / 2, H / 2 + 20);\n  ctx.lineTo(W / 2, H / 2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W / 2, H / 2 + 50);\n  ctx.lineTo(W / 2 - 20, H / 2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W / 2, H / 2 + 50);\n  ctx.lineTo(W / 2 + 20, H / 2 + 70);\n  ctx.stroke();\n  \n  // add a thought bubble\n  ctx.beginPath();\n  ctx.arc(W / 2, H / 2 - 40, 30, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.font = '18px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('?', W / 2, H / 2 - 40);\n  \n  // animate the thought bubble\n  ctx.beginPath();\n  ctx.arc(W / 2, H / 2 - 40 + Math.sin(t) * 10, 30, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
