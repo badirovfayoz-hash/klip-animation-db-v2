@@ -1,0 +1,13 @@
+{
+  "id": "abstract_truth_multiple_perspectives",
+  "category": "abstract",
+  "topic": "truth multiple perspectives",
+  "tags": [
+    "truth",
+    "multiple",
+    "perspectives"
+  ],
+  "created": "2026-05-07T13:40:43.264180",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // multiple perspectives\n  for (let i = 0; i < 5; i++) {\n    ctx.save();\n    ctx.translate(W / 2, H / 2);\n    ctx.rotate(Math.sin(t + i) * Math.PI / 4);\n    ctx.beginPath();\n    ctx.moveTo(-50, 0);\n    ctx.lineTo(50, 0);\n    ctx.stroke();\n    \n    // truth stick figure\n    ctx.beginPath();\n    ctx.arc(0, 0, 20, 0, Math.PI * 2);\n    ctx.stroke();\n    ctx.beginPath();\n    ctx.moveTo(0, 20);\n    ctx.lineTo(0, 50);\n    ctx.stroke();\n    ctx.beginPath();\n    ctx.moveTo(0, 30);\n    ctx.lineTo(-20, 40);\n    ctx.stroke();\n    ctx.beginPath();\n    ctx.moveTo(0, 30);\n    ctx.lineTo(20, 40);\n    ctx.stroke();\n    ctx.restore();\n  }\n  \n  ctx.restore();\n}"
+}
