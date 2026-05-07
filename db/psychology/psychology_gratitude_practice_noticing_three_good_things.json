@@ -1,0 +1,16 @@
+{
+  "id": "psychology_gratitude_practice_noticing_three_good_things",
+  "category": "psychology",
+  "topic": "gratitude practice noticing three good things",
+  "tags": [
+    "gratitude",
+    "practice",
+    "noticing",
+    "three",
+    "good",
+    "things"
+  ],
+  "created": "2026-05-07T14:03:42.846414",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // stick figure\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 20, H/2 + 80);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 20, H/2 + 80);\n  ctx.stroke();\n  \n  // three good things\n  ctx.font = '20px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('1', W/2 - 50 + 20*Math.cos(t), H/2 - 100 + 20*Math.sin(t));\n  ctx.fillText('2', W/2 + 20*Math.cos(t), H/2 - 100 + 20*Math.sin(t));\n  ctx.fillText('3', W/2 + 20*Math.cos(2*t), H/2 - 50 + 20*Math.sin(2*t));\n  \n  // thought bubble\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 120 + 10*Math.sin(t), 30, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 90 + 10*Math.sin(t));\n  ctx.lineTo(W/2, H/2 - 120 + 10*Math.sin(t));\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "animals_bee_collecting_pollen_flower",
+  "category": "animals",
+  "topic": "bee collecting pollen flower",
+  "tags": [
+    "bee",
+    "collecting",
+    "pollen",
+    "flower"
+  ],
+  "created": "2026-05-07T14:04:03.030303",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  // draw flower\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  // draw bee\n  ctx.beginPath();\n  ctx.arc(W/2 + 70 * Math.cos(t), H/2 + 30 * Math.sin(t), 10, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 + 70 * Math.cos(t), H/2 + 30 * Math.sin(t), 5, 0, 2 * Math.PI);\n  ctx.fillStyle = 'black';\n  ctx.fill();\n  // draw wings\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 70 * Math.cos(t) - 10, H/2 + 30 * Math.sin(t));\n  ctx.lineTo(W/2 + 70 * Math.cos(t) - 20, H/2 + 30 * Math.sin(t) - 10);\n  ctx.lineTo(W/2 + 70 * Math.cos(t) - 10, H/2 + 30 * Math.sin(t) + 10);\n  ctx.closePath();\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 70 * Math.cos(t) + 10, H/2 + 30 * Math.sin(t));\n  ctx.lineTo(W/2 + 70 * Math.cos(t) + 20, H/2 + 30 * Math.sin(t) - 10);\n  ctx.lineTo(W/2 + 70 * Math.cos(t) + 10, H/2 + 30 * Math.sin(t) + 10);\n  ctx.closePath();\n  ctx.stroke();\n  ctx.restore();\n}"
+}

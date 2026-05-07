@@ -1,0 +1,13 @@
+{
+  "id": "abstract_change_inevitable_resistance",
+  "category": "abstract",
+  "topic": "change inevitable resistance",
+  "tags": [
+    "change",
+    "inevitable",
+    "resistance"
+  ],
+  "created": "2026-05-07T14:03:58.142007",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // Draw a stick figure trying to hold on to something\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 30, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 30, H/2 + 70);\n  ctx.stroke();\n  \n  // Draw a line representing change, moving to the right\n  ctx.beginPath();\n  ctx.moveTo(0, H/2 + Math.sin(t) * 50);\n  ctx.lineTo(W, H/2 + Math.sin(t) * 50);\n  ctx.stroke();\n  \n  // Draw the stick figure's hands trying to hold on\n  ctx.beginPath();\n  ctx.arc(W/2 - 30, H/2 + 70, 10, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 + 30, H/2 + 70, 10, 0, 2*Math.PI);\n  ctx.stroke();\n  \n  // Draw a wave representing resistance, moving to the left\n  ctx.beginPath();\n  ctx.moveTo(0, H/2 + 100 + Math.cos(t) * 20);\n  ctx.lineTo(W, H/2 + 100 + Math.cos(t + Math.PI) * 20);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

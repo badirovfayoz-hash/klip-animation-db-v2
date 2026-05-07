@@ -1,0 +1,14 @@
+{
+  "id": "animals_butterfly_emerging_cocoon_transform",
+  "category": "animals",
+  "topic": "butterfly emerging cocoon transform",
+  "tags": [
+    "butterfly",
+    "emerging",
+    "cocoon",
+    "transform"
+  ],
+  "created": "2026-05-07T14:04:12.897888",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // cocoon\n  ctx.fillStyle = '#964B00';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  // butterfly\n  let scale = Math.sin(t) * 0.5 + 0.5;\n  if (scale < 0) scale = 0;\n  ctx.fillStyle = '#FFC0CB';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20 * scale, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  // wings\n  ctx.fillStyle = '#FFC0CB';\n  ctx.beginPath();\n  ctx.ellipse(W/2 - 30 * scale, H/2 - 10 * scale, 20 * scale, 10 * scale, 0, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.ellipse(W/2 + 30 * scale, H/2 - 10 * scale, 20 * scale, 10 * scale, 0, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  // body\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 20 * scale, 5, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // antennae\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 5, H/2 - 20 * scale);\n  ctx.lineTo(W/2 - 10, H/2 - 30 * scale);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 5, H/2 - 20 * scale);\n  ctx.lineTo(W/2 + 10, H/2 - 30 * scale);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
