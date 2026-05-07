@@ -1,0 +1,17 @@
+{
+  "id": "book_analysis_wealth_of_nations_smith_market_invisible_hand",
+  "category": "book_analysis",
+  "topic": "wealth of nations smith market invisible hand",
+  "tags": [
+    "wealth",
+    "of",
+    "nations",
+    "smith",
+    "market",
+    "invisible",
+    "hand"
+  ],
+  "created": "2026-05-07T13:47:37.957570",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // Draw Adam Smith\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2*Math.PI);\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 20, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 20, H/2 + 70);\n  ctx.stroke();\n  \n  // Draw Invisible Hand\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50 + 20*Math.cos(t), H/2 + 70 + 20*Math.sin(t));\n  ctx.lineTo(W/2 + 50 + 50*Math.cos(t), H/2 + 100 + 50*Math.sin(t));\n  ctx.lineWidth = 5;\n  ctx.stroke();\n  \n  // Draw Market\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.rect(W/2 + 100, H/2 - 50, 100, 100);\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  \n  // Draw Wealth of Nations book\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.rect(W/2 - 150, H/2 - 50, 50, 100);\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  ctx.font = '20px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Wealth of', W/2 - 100, H/2 - 20);\n  ctx.fillText('Nations', W/2 - 100, H/2 + 20);\n  \n  ctx.restore();\n}"
+}
