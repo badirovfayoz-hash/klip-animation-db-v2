@@ -1,0 +1,17 @@
+{
+  "id": "dog_psychology_dog_showing_pure_unconditional_love_to_owner",
+  "category": "dog_psychology",
+  "topic": "dog showing pure unconditional love to owner",
+  "tags": [
+    "dog",
+    "showing",
+    "pure",
+    "unconditional",
+    "love",
+    "to",
+    "owner"
+  ],
+  "created": "2026-05-07T07:41:18.732790",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // owner\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 - 15, H/2 + 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 + 15, H/2 + 40);\n  ctx.stroke();\n  \n  // dog\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2 + 50 + 20 * Math.sin(t), H/2 + 50, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50 + 20 * Math.sin(t), H/2 + 70);\n  ctx.lineTo(W/2 + 50 + 20 * Math.sin(t), H/2 + 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50 + 20 * Math.sin(t), H/2 + 80);\n  ctx.lineTo(W/2 + 35 + 20 * Math.sin(t), H/2 + 90);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50 + 20 * Math.sin(t), H/2 + 80);\n  ctx.lineTo(W/2 + 65 + 20 * Math.sin(t), H/2 + 90);\n  ctx.stroke();\n  \n  // dog's tail\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50 + 20 * Math.sin(t), H/2 + 100);\n  ctx.lineTo(W/2 + 50 + 20 * Math.sin(t) + 20 * Math.cos(t), H/2 + 120);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "backgrounds_cafe_morning_coffee_ritual",
+  "category": "backgrounds",
+  "topic": "cafe morning coffee ritual",
+  "tags": [
+    "cafe",
+    "morning",
+    "coffee",
+    "ritual"
+  ],
+  "created": "2026-05-07T07:41:48.136957",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.moveTo(0, H);\n  ctx.lineTo(0, H - 50 - 20 * Math.sin(t));\n  ctx.lineTo(W, H - 50 - 20 * Math.sin(t));\n  ctx.lineTo(W, H);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(50 + 20 * Math.cos(t), 0);\n  ctx.lineTo(50 + 20 * Math.cos(t), H);\n  ctx.stroke();\n  ctx.fillStyle = 'black';\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'left';\n  ctx.textBaseline = 'top';\n  ctx.fillText('COFFEE', 10 + 10 * Math.sin(t), 10);\n  ctx.restore();\n}"
+}

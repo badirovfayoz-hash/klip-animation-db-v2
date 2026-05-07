@@ -1,0 +1,14 @@
+{
+  "id": "book_analysis_walden_thoreau_simplicity_nature",
+  "category": "book_analysis",
+  "topic": "walden thoreau simplicity nature",
+  "tags": [
+    "walden",
+    "thoreau",
+    "simplicity",
+    "nature"
+  ],
+  "created": "2026-05-07T07:41:13.583383",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // tree\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2);\n  ctx.lineTo(W/2, H/2 - 100 + 50*Math.sin(t));\n  ctx.stroke();\n  \n  // leaves\n  ctx.lineWidth = 2;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 100 + 50*Math.sin(t), 20 + 10*Math.cos(t), 0, 2*Math.PI);\n  ctx.stroke();\n  \n  // thoreau\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2 - 50, H/2 + 50, 20, 0, 2*Math.PI); // head\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 + 70);\n  ctx.lineTo(W/2 - 50, H/2 + 100); // body\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 + 90);\n  ctx.lineTo(W/2 - 70, H/2 + 120); // leg\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 + 90);\n  ctx.lineTo(W/2 - 30, H/2 + 120); // leg\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 + 80);\n  ctx.lineTo(W/2 - 70, H/2 + 110); // arm\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 + 80);\n  ctx.lineTo(W/2 - 30, H/2 + 110); // arm\n  ctx.stroke();\n  \n  // book\n  ctx.lineWidth = 2;\n  ctx.fillStyle = 'black';\n  ctx.fillRect(W/2 - 20, H/2 + 130, 40, 10);\n  \n  ctx.restore();\n}"
+}
