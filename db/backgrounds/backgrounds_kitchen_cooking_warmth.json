@@ -1,0 +1,13 @@
+{
+  "id": "backgrounds_kitchen_cooking_warmth",
+  "category": "backgrounds",
+  "topic": "kitchen cooking warmth",
+  "tags": [
+    "kitchen",
+    "cooking",
+    "warmth"
+  ],
+  "created": "2026-05-07T14:06:33.006653",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.moveTo(0, H);\n  ctx.lineTo(0, H - 50 - 20 * Math.sin(t));\n  ctx.lineTo(W, H - 50 - 20 * Math.sin(t + Math.PI));\n  ctx.lineTo(W, H);\n  ctx.stroke();\n  ctx.fillStyle = 'black';\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'left';\n  ctx.textBaseline = 'top';\n  ctx.fillText('Warmth', 10, 10 + 10 * Math.sin(t));\n  ctx.restore();\n}"
+}
