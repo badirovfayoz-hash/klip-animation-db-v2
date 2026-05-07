@@ -1,0 +1,14 @@
+{
+  "id": "food_nutrition_fermented_foods_probiotics_supporting",
+  "category": "food_nutrition",
+  "topic": "fermented foods probiotics supporting",
+  "tags": [
+    "fermented",
+    "foods",
+    "probiotics",
+    "supporting"
+  ],
+  "created": "2026-05-07T15:44:07.300583",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // Draw kimchi\n  ctx.fillStyle = '#ff99cc';\n  ctx.beginPath();\n  ctx.arc(W/2 - 100, H/2, 50, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.stroke();\n  \n  // Draw sauerkraut\n  ctx.fillStyle = '#cccccc';\n  ctx.beginPath();\n  ctx.arc(W/2 + 100, H/2, 50, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  // Draw probiotic bacteria\n  ctx.fillStyle = '#66cc00';\n  ctx.beginPath();\n  ctx.arc(W/2 - 50 + 20 * Math.sin(t), H/2 - 20 + 20 * Math.cos(t), 10, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  // Draw stick figure\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 150, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 170);\n  ctx.lineTo(W/2, H/2 + 250);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 200);\n  ctx.lineTo(W/2 - 30, H/2 + 230);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 200);\n  ctx.lineTo(W/2 + 30, H/2 + 230);\n  ctx.stroke();\n  \n  // Draw smiling face\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 140, 10, 0, Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 10, H/2 + 130);\n  ctx.lineTo(W/2 + 10, H/2 + 150);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
