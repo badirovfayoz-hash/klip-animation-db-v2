@@ -1,0 +1,16 @@
+{
+  "id": "psychology_growth_mindset_talent_built_not_born",
+  "category": "psychology",
+  "topic": "growth mindset talent built not born",
+  "tags": [
+    "growth",
+    "mindset",
+    "talent",
+    "built",
+    "not",
+    "born"
+  ],
+  "created": "2026-05-07T13:59:17.831220",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // plant seed\n  ctx.fillStyle = '#000';\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 10, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // growing plant\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2);\n  ctx.lineTo(W/2, H/2 - 50 * (1 + Math.sin(t)));\n  ctx.stroke();\n  \n  // leaves\n  ctx.fillStyle = '#000';\n  ctx.beginPath();\n  ctx.arc(W/2 - 20 * Math.sin(t), H/2 - 50 * (1 + Math.sin(t)) - 20, 10, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2 + 20 * Math.sin(t), H/2 - 50 * (1 + Math.sin(t)) - 20, 10, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // stick figure\n  ctx.beginPath();\n  ctx.arc(W/2, H - 50, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H - 50);\n  ctx.lineTo(W/2, H - 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H - 100);\n  ctx.lineTo(W/2 - 30, H - 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H - 100);\n  ctx.lineTo(W/2 + 30, H - 70);\n  ctx.stroke();\n  \n  // watering can\n  ctx.beginPath();\n  ctx.rect(W/2 - 40, H - 150, 20, 20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 40, H - 130);\n  ctx.lineTo(W/2 - 40, H - 150);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 20, H - 130);\n  ctx.lineTo(W/2, H - 120);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

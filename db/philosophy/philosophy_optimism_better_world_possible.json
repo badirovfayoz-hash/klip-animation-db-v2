@@ -1,0 +1,14 @@
+{
+  "id": "philosophy_optimism_better_world_possible",
+  "category": "philosophy",
+  "topic": "optimism better world possible",
+  "tags": [
+    "optimism",
+    "better",
+    "world",
+    "possible"
+  ],
+  "created": "2026-05-07T13:59:42.691345",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // sun\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50 + 20 * Math.sin(t), 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // stick figure\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 70, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 90);\n  ctx.lineTo(W/2, H/2 + 150);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 120);\n  ctx.lineTo(W/2 - 30, H/2 + 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 120);\n  ctx.lineTo(W/2 + 30, H/2 + 100);\n  ctx.stroke();\n  \n  // arms up\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 100);\n  ctx.lineTo(W/2 - 30, H/2 + 70 - 20 * Math.sin(t));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 100);\n  ctx.lineTo(W/2 + 30, H/2 + 70 - 20 * Math.sin(t));\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

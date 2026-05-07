@@ -1,0 +1,18 @@
+{
+  "id": "dog_psychology_dog_using_eye_contact_to_communicate_with_human",
+  "category": "dog_psychology",
+  "topic": "dog using eye contact to communicate with human",
+  "tags": [
+    "dog",
+    "using",
+    "eye",
+    "contact",
+    "to",
+    "communicate",
+    "with",
+    "human"
+  ],
+  "created": "2026-05-07T14:00:02.642162",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // human\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 25);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 - 15, H/2 + 45);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 + 15, H/2 + 45);\n  ctx.stroke();\n  \n  // dog\n  ctx.beginPath();\n  ctx.arc(W/2 - 100, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 + 25);\n  ctx.lineTo(W/2 - 100, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 + 30);\n  ctx.lineTo(W/2 - 115, H/2 + 45);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 + 30);\n  ctx.lineTo(W/2 - 85, H/2 + 45);\n  ctx.stroke();\n  \n  // eye contact\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 10 + 10 * Math.sin(t));\n  ctx.lineTo(W/2 - 100, H/2 - 10 + 10 * Math.sin(t));\n  ctx.lineWidth = 2;\n  ctx.stroke();\n  ctx.lineWidth = 4;\n  \n  ctx.restore();\n}"
+}
