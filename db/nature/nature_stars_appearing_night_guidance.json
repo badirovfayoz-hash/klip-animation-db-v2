@@ -1,0 +1,14 @@
+{
+  "id": "nature_stars_appearing_night_guidance",
+  "category": "nature",
+  "topic": "stars appearing night guidance",
+  "tags": [
+    "stars",
+    "appearing",
+    "night",
+    "guidance"
+  ],
+  "created": "2026-05-07T14:02:49.426961",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  for (let i = 0; i < 20; i++) {\n    ctx.beginPath();\n    let x = Math.cos(i + t) * W / 2 + W / 2;\n    let y = Math.sin(i + t * 1.3) * H / 2 + H / 2;\n    ctx.arc(x, y, 2 + Math.sin(t + i) * 2, 0, 2 * Math.PI);\n    ctx.stroke();\n  }\n  ctx.beginPath();\n  ctx.moveTo(W / 2, H / 2);\n  ctx.lineTo(W / 2 + Math.cos(t) * W / 4, H / 2 + Math.sin(t) * H / 4);\n  ctx.stroke();\n  ctx.restore();\n}"
+}

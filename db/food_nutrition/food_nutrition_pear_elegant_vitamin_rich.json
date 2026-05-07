@@ -1,0 +1,14 @@
+{
+  "id": "food_nutrition_pear_elegant_vitamin_rich",
+  "category": "food_nutrition",
+  "topic": "pear elegant vitamin rich",
+  "tags": [
+    "pear",
+    "elegant",
+    "vitamin",
+    "rich"
+  ],
+  "created": "2026-05-07T14:03:34.376142",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // Draw pear\n  ctx.fillStyle = '#8bc34a';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50 + 20 * Math.sin(t), 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // Draw stem\n  ctx.fillStyle = '#3e8e41';\n  ctx.fillRect(W/2 - 5, H/2 - 70, 10, 20);\n  \n  // Draw leaves\n  ctx.fillStyle = '#3e8e41';\n  ctx.beginPath();\n  ctx.arc(W/2 - 20, H/2 - 90, 10, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2 + 20, H/2 - 90, 10, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // Draw outline\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50 + 20 * Math.sin(t), 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.rect(W/2 - 5, H/2 - 70, 10, 20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 - 20, H/2 - 90, 10, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 + 20, H/2 - 90, 10, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // Draw vitamin symbol\n  ctx.fillStyle = 'black';\n  ctx.font = '30px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillText('+', W/2 + 80, H/2);\n  \n  // Draw elegant text\n  ctx.font = '20px Arial';\n  ctx.fillText('Elegant', W/2 + 100, H/2 - 20);\n  \n  ctx.restore();\n}"
+}

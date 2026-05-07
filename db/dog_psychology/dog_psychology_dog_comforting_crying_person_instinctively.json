@@ -1,0 +1,15 @@
+{
+  "id": "dog_psychology_dog_comforting_crying_person_instinctively",
+  "category": "dog_psychology",
+  "topic": "dog comforting crying person instinctively",
+  "tags": [
+    "dog",
+    "comforting",
+    "crying",
+    "person",
+    "instinctively"
+  ],
+  "created": "2026-05-07T14:03:24.222324",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // draw person\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2 - 50, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 + 20);\n  ctx.lineTo(W/2 - 50, H/2 + 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 + 40);\n  ctx.lineTo(W/2 - 70, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 + 40);\n  ctx.lineTo(W/2 - 30, H/2 + 70);\n  ctx.stroke();\n  \n  // draw tears\n  ctx.beginPath();\n  ctx.arc(W/2 - 50, H/2 - 10 + 10 * Math.sin(t), 5, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 - 50, H/2 - 20 + 10 * Math.sin(t + Math.PI/2), 5, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // draw dog\n  ctx.beginPath();\n  ctx.arc(W/2 + 50, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50, H/2 + 20);\n  ctx.lineTo(W/2 + 50, H/2 + 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50, H/2 + 40);\n  ctx.lineTo(W/2 + 30, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50, H/2 + 40);\n  ctx.lineTo(W/2 + 70, H/2 + 70);\n  ctx.stroke();\n  \n  // draw dog's movement\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50 + 20 * Math.sin(t), H/2 + 100);\n  ctx.lineTo(W/2 - 50, H/2 + 100);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
