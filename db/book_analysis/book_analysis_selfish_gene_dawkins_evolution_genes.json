@@ -1,0 +1,15 @@
+{
+  "id": "book_analysis_selfish_gene_dawkins_evolution_genes",
+  "category": "book_analysis",
+  "topic": "selfish gene dawkins evolution genes",
+  "tags": [
+    "selfish",
+    "gene",
+    "dawkins",
+    "evolution",
+    "genes"
+  ],
+  "created": "2026-05-07T13:48:10.520757",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // Draw stick figure representing gene\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 20, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 20, H/2 + 70);\n  ctx.stroke();\n  \n  // Animate gene replication\n  ctx.save();\n  ctx.translate(W/2, H/2 + 80);\n  ctx.rotate(Math.sin(t));\n  ctx.beginPath();\n  ctx.arc(0, 0, 10, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(0, 0);\n  ctx.lineTo(0, 20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(0, 20);\n  ctx.lineTo(-10, 30);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(0, 20);\n  ctx.lineTo(10, 30);\n  ctx.stroke();\n  ctx.restore();\n  \n  // Draw double helix around gene\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 30, H/2);\n  ctx.lineTo(W/2 - 30, H/2 + 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 30, H/2);\n  ctx.lineTo(W/2 + 30, H/2 + 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 30, H/2 + 20 + Math.sin(t)*10);\n  ctx.lineTo(W/2 + 30, H/2 + 20 - Math.sin(t)*10);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 30, H/2 + 60 + Math.sin(t)*10);\n  ctx.lineTo(W/2 + 30, H/2 + 60 - Math.sin(t)*10);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

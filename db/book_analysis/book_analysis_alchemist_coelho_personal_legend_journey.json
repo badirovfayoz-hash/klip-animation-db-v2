@@ -1,0 +1,15 @@
+{
+  "id": "book_analysis_alchemist_coelho_personal_legend_journey",
+  "category": "book_analysis",
+  "topic": "alchemist coelho personal legend journey",
+  "tags": [
+    "alchemist",
+    "coelho",
+    "personal",
+    "legend",
+    "journey"
+  ],
+  "created": "2026-05-07T13:48:20.587362",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // sun\n  ctx.fillStyle = 'yellow';\n  ctx.beginPath();\n  ctx.arc(W/2, H/4, 50, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // alchemist\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 - 20, H/2 + 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 + 20, H/2 + 40);\n  ctx.stroke();\n  \n  // journey path\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 100 * Math.sin(t), H - 50);\n  ctx.stroke();\n  \n  // pyramids\n  ctx.fillStyle = 'brown';\n  ctx.beginPath();\n  ctx.rect(W/2 + 80 * Math.sin(t) - 20, H - 100, 40, 40);\n  ctx.fill();\n  \n  // personal legend text\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Follow Your Personal Legend', W/2, H/2 - 100);\n  \n  ctx.restore();\n}"
+}
