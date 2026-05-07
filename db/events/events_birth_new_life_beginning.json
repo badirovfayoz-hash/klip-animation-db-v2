@@ -1,0 +1,14 @@
+{
+  "id": "events_birth_new_life_beginning",
+  "category": "events",
+  "topic": "birth new life beginning",
+  "tags": [
+    "birth",
+    "new",
+    "life",
+    "beginning"
+  ],
+  "created": "2026-05-07T14:00:49.901930",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // sun\n  ctx.fillStyle = 'yellow';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // earth\n  ctx.fillStyle = 'green';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 70, 30, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // seed\n  ctx.fillStyle = 'brown';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 100, 10, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // sprout\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 110);\n  ctx.lineTo(W/2, H/2 + 110 - 50 * Math.sin(t));\n  ctx.stroke();\n  \n  // leaves\n  ctx.fillStyle = 'green';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 110 - 50 * Math.sin(t), 10 * Math.sin(t), 0, 2 * Math.PI);\n  ctx.fill();\n  \n  ctx.restore();\n}"
+}

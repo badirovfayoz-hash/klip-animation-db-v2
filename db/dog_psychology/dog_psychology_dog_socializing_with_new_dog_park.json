@@ -1,0 +1,16 @@
+{
+  "id": "dog_psychology_dog_socializing_with_new_dog_park",
+  "category": "dog_psychology",
+  "topic": "dog socializing with new dog park",
+  "tags": [
+    "dog",
+    "socializing",
+    "with",
+    "new",
+    "dog",
+    "park"
+  ],
+  "created": "2026-05-07T14:00:35.721444",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // Draw dog park background\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.rect(50, 50, W - 100, H - 100);\n  ctx.stroke();\n  \n  // Draw first dog\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(150, H / 2, 30, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(150, H / 2 + 30);\n  ctx.lineTo(150, H / 2 + 60);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(150, H / 2 + 45);\n  ctx.lineTo(120, H / 2 + 75);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(150, H / 2 + 45);\n  ctx.lineTo(180, H / 2 + 75);\n  ctx.stroke();\n  \n  // Draw second dog\n  ctx.beginPath();\n  ctx.arc(W - 150, H / 2 + 50 + 20 * Math.sin(t), 30, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W - 150, H / 2 + 50 + 20 * Math.sin(t) + 30);\n  ctx.lineTo(W - 150, H / 2 + 50 + 20 * Math.sin(t) + 60);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W - 150, H / 2 + 50 + 20 * Math.sin(t) + 45);\n  ctx.lineTo(W - 170, H / 2 + 50 + 20 * Math.sin(t) + 75);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W - 150, H / 2 + 50 + 20 * Math.sin(t) + 45);\n  ctx.lineTo(W - 130, H / 2 + 50 + 20 * Math.sin(t) + 75);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
