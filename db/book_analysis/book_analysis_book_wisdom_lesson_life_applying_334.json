@@ -1,0 +1,16 @@
+{
+  "id": "book_analysis_book_wisdom_lesson_life_applying_334",
+  "category": "book_analysis",
+  "topic": "book wisdom lesson life applying 334",
+  "tags": [
+    "book",
+    "wisdom",
+    "lesson",
+    "life",
+    "applying",
+    "334"
+  ],
+  "created": "2026-05-07T15:17:35.056371",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // book\n  ctx.fillStyle = 'brown';\n  ctx.fillRect(W/2-50, H/2-70, 100, 20);\n  ctx.fillStyle = 'white';\n  ctx.fillRect(W/2-45, H/2-65, 90, 10);\n  ctx.strokeRect(W/2-50, H/2-70, 100, 20);\n  \n  // stick figure\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2-20, 10, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2-10);\n  ctx.lineTo(W/2, H/2+20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2);\n  ctx.lineTo(W/2-20, H/2+20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2);\n  ctx.lineTo(W/2+20, H/2+20);\n  ctx.stroke();\n  \n  // wisdom bubble\n  ctx.fillStyle = 'white';\n  ctx.beginPath();\n  ctx.arc(W/2+40, H/2-60, 20+10*Math.sin(t), 0, 2*Math.PI);\n  ctx.fill();\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  ctx.font = '14px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Apply', W/2+40, H/2-60);\n  \n  ctx.restore();\n}"
+}
