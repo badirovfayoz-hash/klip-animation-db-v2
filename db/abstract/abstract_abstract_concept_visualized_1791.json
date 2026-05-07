@@ -1,0 +1,14 @@
+{
+  "id": "abstract_abstract_concept_visualized_1791",
+  "category": "abstract",
+  "topic": "abstract concept visualized 1791",
+  "tags": [
+    "abstract",
+    "concept",
+    "visualized",
+    "1791"
+  ],
+  "created": "2026-05-07T15:40:34.926060",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // Draw stick figure\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // Draw body\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 100);\n  ctx.stroke();\n  \n  // Draw arms\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 50 + 20 * Math.sin(t), H/2 + 70);\n  ctx.stroke();\n  \n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 50 - 20 * Math.sin(t), H/2 + 70);\n  ctx.stroke();\n  \n  // Draw legs\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 100);\n  ctx.lineTo(W/2 - 30 + 15 * Math.cos(t), H/2 + 150);\n  ctx.stroke();\n  \n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 100);\n  ctx.lineTo(W/2 + 30 - 15 * Math.cos(t), H/2 + 150);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
