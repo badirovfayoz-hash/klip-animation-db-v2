@@ -1,0 +1,16 @@
+{
+  "id": "book_analysis_book_wisdom_lesson_life_applying_188",
+  "category": "book_analysis",
+  "topic": "book wisdom lesson life applying 188",
+  "tags": [
+    "book",
+    "wisdom",
+    "lesson",
+    "life",
+    "applying",
+    "188"
+  ],
+  "created": "2026-05-07T16:31:25.773773",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // draw a book\n  ctx.fillStyle = '#663300';\n  ctx.fillRect(W/2-50, H/2-50, 100, 100);\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.strokeRect(W/2-50, H/2-50, 100, 100);\n  \n  // draw a stick figure reading the book\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2-150, H/2-100, 20, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.moveTo(W/2-150, H/2-80);\n  ctx.lineTo(W/2-150, H/2-40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2-150, H/2-60);\n  ctx.lineTo(W/2-120, H/2-40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2-150, H/2-60);\n  ctx.lineTo(W/2-180, H/2-40);\n  ctx.stroke();\n  \n  // add a thought bubble with a lightbulb\n  ctx.fillStyle = 'white';\n  ctx.beginPath();\n  ctx.arc(W/2-150, H/2-160, 30, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2-150, H/2-160, 10, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.moveTo(W/2-150, H/2-150);\n  ctx.lineTo(W/2-140, H/2-170);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2-150, H/2-150);\n  ctx.lineTo(W/2-160, H/2-170);\n  ctx.stroke();\n  \n  // animate the thought bubble\n  ctx.save();\n  ctx.translate(W/2-150, H/2-160);\n  ctx.rotate(Math.sin(t));\n  ctx.beginPath();\n  ctx.moveTo(0, -20);\n  ctx.lineTo(-10, -30);\n  ctx.lineTo(10, -30);\n  ctx.closePath();\n  ctx.fillStyle = 'yellow';\n  ctx.fill();\n  ctx.restore();\n  \n  ctx.restore();\n}"
+}
