@@ -1,0 +1,15 @@
+{
+  "id": "psychology_attachment_style_avoidant_pushing_away",
+  "category": "psychology",
+  "topic": "attachment style avoidant pushing away",
+  "tags": [
+    "attachment",
+    "style",
+    "avoidant",
+    "pushing",
+    "away"
+  ],
+  "created": "2026-05-07T13:50:02.433586",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // stick figure\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  \n  // arms\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2 - 30, H/2 + 50);\n  ctx.stroke();\n  \n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2 + 30, H/2 + 50);\n  ctx.stroke();\n  \n  // legs\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 40);\n  ctx.lineTo(W/2 - 20, H/2 + 80);\n  ctx.stroke();\n  \n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 40);\n  ctx.lineTo(W/2 + 20, H/2 + 80);\n  ctx.stroke();\n  \n  // push away\n  ctx.beginPath();\n  ctx.arc(W/2 + 50 + 20*Math.sin(t), H/2, 10, 0, 2*Math.PI);\n  ctx.stroke();\n  \n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('NO', W/2 + 50 + 20*Math.sin(t), H/2);\n  \n  ctx.restore();\n}"
+}

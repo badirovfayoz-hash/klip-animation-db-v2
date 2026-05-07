@@ -1,0 +1,14 @@
+{
+  "id": "nature_rain_falling_gentle_soothing",
+  "category": "nature",
+  "topic": "rain falling gentle soothing",
+  "tags": [
+    "rain",
+    "falling",
+    "gentle",
+    "soothing"
+  ],
+  "created": "2026-05-07T13:49:41.488228",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  for (let i = 0; i < 50; i++) {\n    ctx.beginPath();\n    ctx.moveTo(Math.random() * W, -Math.random() * H + Math.sin(t + i) * H);\n    ctx.lineTo(Math.random() * W, Math.sin(t + i) * H + H / 2);\n    ctx.stroke();\n  }\n  ctx.restore();\n}"
+}

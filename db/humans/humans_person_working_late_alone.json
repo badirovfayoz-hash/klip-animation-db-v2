@@ -1,0 +1,14 @@
+{
+  "id": "humans_person_working_late_alone",
+  "category": "humans",
+  "topic": "person working late alone",
+  "tags": [
+    "person",
+    "working",
+    "late",
+    "alone"
+  ],
+  "created": "2026-05-07T13:50:27.091675",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // desk\n  ctx.fillStyle = '#ccc';\n  ctx.fillRect(W/2-50, H/2+20, 100, 50);\n  \n  // chair\n  ctx.fillStyle = '#ccc';\n  ctx.fillRect(W/2-30, H/2+70, 60, 30);\n  \n  // person\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2-50+20*Math.sin(t), 20, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2-30);\n  ctx.lineTo(W/2, H/2+20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2-10);\n  ctx.lineTo(W/2-20, H/2+10);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2-10);\n  ctx.lineTo(W/2+20, H/2+10);\n  ctx.stroke();\n  \n  // arm moving\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2-10);\n  ctx.lineTo(W/2-20+10*Math.cos(t), H/2+40);\n  ctx.stroke();\n  \n  // head nodding\n  ctx.beginPath();\n  ctx.arc(W/2, H/2-50+10*Math.sin(2*t), 20, 0, 2*Math.PI);\n  ctx.fill();\n  \n  ctx.restore();\n}"
+}
