@@ -1,0 +1,15 @@
+{
+  "id": "humans_person_running_full_speed_forward",
+  "category": "humans",
+  "topic": "person running full speed forward",
+  "tags": [
+    "person",
+    "running",
+    "full",
+    "speed",
+    "forward"
+  ],
+  "created": "2026-05-07T13:46:54.692091",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.arc(W/2 + Math.sin(t) * 20, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + Math.sin(t) * 20, H/2 + 20);\n  ctx.lineTo(W/2 + Math.sin(t) * 20 - Math.sin(t * 2) * 30, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + Math.sin(t) * 20, H/2 + 20);\n  ctx.lineTo(W/2 + Math.sin(t) * 20 + Math.sin(t * 2) * 30, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + Math.sin(t) * 20, H/2 + 50);\n  ctx.lineTo(W/2 + Math.sin(t) * 20 + Math.cos(t) * 20, H/2 + 80);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + Math.sin(t) * 20, H/2 + 50);\n  ctx.lineTo(W/2 + Math.sin(t) * 20 - Math.cos(t) * 20, H/2 + 80);\n  ctx.stroke();\n  ctx.restore();\n}"
+}

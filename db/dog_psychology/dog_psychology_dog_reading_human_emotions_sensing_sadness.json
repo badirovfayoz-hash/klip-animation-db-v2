@@ -1,0 +1,16 @@
+{
+  "id": "dog_psychology_dog_reading_human_emotions_sensing_sadness",
+  "category": "dog_psychology",
+  "topic": "dog reading human emotions sensing sadness",
+  "tags": [
+    "dog",
+    "reading",
+    "human",
+    "emotions",
+    "sensing",
+    "sadness"
+  ],
+  "created": "2026-05-07T13:46:44.812358",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // dog\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2, H/2 + 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 75);\n  ctx.lineTo(W/2 - 25, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 75);\n  ctx.lineTo(W/2 + 25, H/2 + 50);\n  ctx.stroke();\n  \n  // human\n  ctx.beginPath();\n  ctx.arc(W/2 + 150, H/2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 150, H/2 + 50);\n  ctx.lineTo(W/2 + 150, H/2 + 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 150, H/2 + 75);\n  ctx.lineTo(W/2 + 125, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 150, H/2 + 75);\n  ctx.lineTo(W/2 + 175, H/2 + 50);\n  ctx.stroke();\n  \n  // sadness\n  ctx.beginPath();\n  ctx.arc(W/2 + 150, H/2 - 50, 20, 0, 2 * Math.PI);\n  ctx.fillStyle = 'black';\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 150, H/2 - 30);\n  ctx.lineTo(W/2 + 170, H/2 - 20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 150, H/2 - 30);\n  ctx.lineTo(W/2 + 130, H/2 - 20);\n  ctx.stroke();\n  \n  // dog sensing sadness\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50, H/2 + 75);\n  ctx.lineTo(W/2 + 150, H/2 - 50);\n  ctx.lineWidth = 2;\n  ctx.strokeStyle = 'gray';\n  ctx.stroke();\n  ctx.lineWidth = 3;\n  \n  // head movement\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.fillStyle = 'black';\n  ctx.fill();\n  ctx.save();\n  ctx.translate(W/2, H/2);\n  ctx.rotate(Math.sin(t));\n  ctx.beginPath();\n  ctx.arc(0, 0, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.restore();\n  \n  ctx.restore();\n}"
+}
