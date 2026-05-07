@@ -1,0 +1,15 @@
+{
+  "id": "objects_symbolic_object_meaning_representing_1759",
+  "category": "objects",
+  "topic": "symbolic object meaning representing 1759",
+  "tags": [
+    "symbolic",
+    "object",
+    "meaning",
+    "representing",
+    "1759"
+  ],
+  "created": "2026-05-07T15:33:22.077824",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  \n  // Draw a watch\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // Draw hour and minute hands\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2);\n  ctx.lineTo(W/2 + 40 * Math.sin(2 * Math.PI * (t + 1759/60)), H/2 - 40 * Math.cos(2 * Math.PI * (t + 1759/60)));\n  ctx.stroke();\n  \n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2);\n  ctx.lineTo(W/2 + 30 * Math.sin(2 * Math.PI * (t + 1759/600)), H/2 - 30 * Math.cos(2 * Math.PI * (t + 1759/600)));\n  ctx.stroke();\n  \n  // Add a stick figure admiring the watch\n  ctx.beginPath();\n  ctx.arc(W/2 - 100, H/2 - 50, 10, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 - 40);\n  ctx.lineTo(W/2 - 100, H/2 + 20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 - 20);\n  ctx.lineTo(W/2 - 80, H/2);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 - 20);\n  ctx.lineTo(W/2 - 120, H/2);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
