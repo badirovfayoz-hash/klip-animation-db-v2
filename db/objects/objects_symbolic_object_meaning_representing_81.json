@@ -1,0 +1,15 @@
+{
+  "id": "objects_symbolic_object_meaning_representing_81",
+  "category": "objects",
+  "topic": "symbolic object meaning representing 81",
+  "tags": [
+    "symbolic",
+    "object",
+    "meaning",
+    "representing",
+    "81"
+  ],
+  "created": "2026-05-07T15:18:47.184589",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  // Nine symbols for 81 (9x9)\n  for (let i = 0; i < 3; i++) {\n    for (let j = 0; j < 3; j++) {\n      ctx.beginPath();\n      ctx.arc(W / 2 - 100 + i * 70, H / 2 - 50 + j * 70, 20, 0, 2 * Math.PI);\n      ctx.fill();\n    }\n  }\n  // oscillating circle in the middle to represent infinity\n  ctx.beginPath();\n  ctx.arc(W / 2, H / 2, 10 + 5 * Math.sin(t), 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.restore();\n}"
+}
