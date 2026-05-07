@@ -1,0 +1,14 @@
+{
+  "id": "nature_nature_phenomenon_beautiful_974",
+  "category": "nature",
+  "topic": "nature phenomenon beautiful 974",
+  "tags": [
+    "nature",
+    "phenomenon",
+    "beautiful",
+    "974"
+  ],
+  "created": "2026-05-07T15:53:31.194311",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // sun\n  ctx.fillStyle = 'yellow';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50 + 20*Math.sin(t), 0, 2*Math.PI);\n  ctx.fill();\n  \n  // clouds\n  ctx.fillStyle = 'white';\n  ctx.beginPath();\n  ctx.arc(W/2 + 100*Math.cos(t), H/2 - 50*Math.sin(t), 20 + 10*Math.sin(2*t), 0, 2*Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2 - 150*Math.cos(t), H/2 + 20*Math.sin(t), 30 + 15*Math.sin(3*t), 0, 2*Math.PI);\n  ctx.fill();\n  \n  // trees\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H - 50);\n  ctx.lineTo(W/2 - 100, H - 150 - 50*Math.sin(t));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50, H - 50);\n  ctx.lineTo(W/2 + 50, H - 120 - 30*Math.sin(2*t));\n  ctx.stroke();\n  \n  // stick figure\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2, H - 100, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H - 80);\n  ctx.lineTo(W/2, H - 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H - 60);\n  ctx.lineTo(W/2 - 20, H - 80);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H - 60);\n  ctx.lineTo(W/2 + 20, H - 80);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
