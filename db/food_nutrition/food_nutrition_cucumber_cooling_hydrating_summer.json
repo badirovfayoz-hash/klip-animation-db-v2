@@ -1,0 +1,14 @@
+{
+  "id": "food_nutrition_cucumber_cooling_hydrating_summer",
+  "category": "food_nutrition",
+  "topic": "cucumber cooling hydrating summer",
+  "tags": [
+    "cucumber",
+    "cooling",
+    "hydrating",
+    "summer"
+  ],
+  "created": "2026-05-07T16:32:04.801638",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  \n  // sun\n  ctx.fillStyle = 'yellow';\n  ctx.beginPath();\n  ctx.arc(W / 2, H / 2 - 100, 50, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  // cucumber\n  ctx.fillStyle = 'green';\n  ctx.beginPath();\n  ctx.rect(W / 2 - 25, H / 2, 50, 100);\n  ctx.fill();\n  ctx.stroke();\n  \n  // water droplets\n  ctx.fillStyle = 'blue';\n  for (let i = 0; i < 5; i++) {\n    ctx.beginPath();\n    ctx.arc(W / 2 - 25 + i * 10, H / 2 - 50 + Math.sin(t + i) * 20, 5, 0, 2 * Math.PI);\n    ctx.fill();\n  }\n  \n  // stick figure\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W / 2 + 100, H / 2, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W / 2 + 100, H / 2 + 20);\n  ctx.lineTo(W / 2 + 100, H / 2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W / 2 + 100, H / 2 + 50);\n  ctx.lineTo(W / 2 + 80, H / 2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W / 2 + 100, H / 2 + 50);\n  ctx.lineTo(W / 2 + 120, H / 2 + 70);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
