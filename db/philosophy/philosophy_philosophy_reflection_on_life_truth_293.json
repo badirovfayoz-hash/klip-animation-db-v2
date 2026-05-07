@@ -1,0 +1,16 @@
+{
+  "id": "philosophy_philosophy_reflection_on_life_truth_293",
+  "category": "philosophy",
+  "topic": "philosophy reflection on life truth 293",
+  "tags": [
+    "philosophy",
+    "reflection",
+    "on",
+    "life",
+    "truth",
+    "293"
+  ],
+  "created": "2026-05-07T16:03:43.042166",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // face\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  \n  // eyes\n  ctx.beginPath();\n  ctx.arc(W/2 - 20, H/2 - 20, 5, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2 + 20, H/2 - 20, 5, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // thought bubble\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 100 + 50 * Math.sin(t), 30, 0, 2 * Math.PI);\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  \n  // question mark\n  ctx.font = '30px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('?', W/2, H/2 - 100 + 50 * Math.sin(t));\n  \n  ctx.restore();\n}"
+}
