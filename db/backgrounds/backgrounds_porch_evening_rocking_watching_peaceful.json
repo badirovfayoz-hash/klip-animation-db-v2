@@ -1,0 +1,15 @@
+{
+  "id": "backgrounds_porch_evening_rocking_watching_peaceful",
+  "category": "backgrounds",
+  "topic": "porch evening rocking watching peaceful",
+  "tags": [
+    "porch",
+    "evening",
+    "rocking",
+    "watching",
+    "peaceful"
+  ],
+  "created": "2026-05-07T15:12:20.437523",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.rect(0.1*W, 0.8*H, 0.8*W, 0.1*H);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(0.1*W, 0.7*H);\n  ctx.lineTo(0.1*W, 0.9*H);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(0.9*W, 0.7*H);\n  ctx.lineTo(0.9*W, 0.9*H);\n  ctx.stroke();\n  ctx.fillStyle = 'black';\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'left';\n  ctx.textBaseline = 'top';\n  ctx.fillText('Porch', 0.1*W, 0.7*H);\n  ctx.beginPath();\n  ctx.arc(0.5*W, 0.4*H, 0.2*W, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(0.5*W + 0.1*W*Math.sin(t), 0.4*H, 0.05*W, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.restore();\n}"
+}
