@@ -1,0 +1,18 @@
+{
+  "id": "dog_psychology_dog_guide_dog_stopping_curb_protecting_blind_owner",
+  "category": "dog_psychology",
+  "topic": "dog guide dog stopping curb protecting blind owner",
+  "tags": [
+    "dog",
+    "guide",
+    "dog",
+    "stopping",
+    "curb",
+    "protecting",
+    "blind",
+    "owner"
+  ],
+  "created": "2026-05-07T16:34:25.982235",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // draw dog\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2 - 50, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 + 20);\n  ctx.lineTo(W/2 - 50, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 + 30);\n  ctx.lineTo(W/2 - 70, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 + 30);\n  ctx.lineTo(W/2 - 30, H/2 + 50);\n  ctx.stroke();\n  \n  // draw blind owner\n  ctx.beginPath();\n  ctx.arc(W/2 + 50, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50, H/2 + 20);\n  ctx.lineTo(W/2 + 50, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50, H/2 + 30);\n  ctx.lineTo(W/2 + 30, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50, H/2 + 30);\n  ctx.lineTo(W/2 + 70, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 40, H/2 - 10);\n  ctx.lineTo(W/2 + 60, H/2 - 10);\n  ctx.stroke();\n  \n  // draw curb\n  ctx.lineWidth = 5;\n  ctx.beginPath();\n  ctx.moveTo(0, H - 20 + 10 * Math.sin(t));\n  ctx.lineTo(W, H - 20 + 10 * Math.sin(t));\n  ctx.stroke();\n  \n  // draw dog stopping\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 + 50);\n  ctx.lineTo(W/2 - 50, H - 20 + 10 * Math.sin(t));\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
