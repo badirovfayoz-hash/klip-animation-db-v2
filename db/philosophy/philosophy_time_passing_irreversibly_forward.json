@@ -1,0 +1,14 @@
+{
+  "id": "philosophy_time_passing_irreversibly_forward",
+  "category": "philosophy",
+  "topic": "time passing irreversibly forward",
+  "tags": [
+    "time",
+    "passing",
+    "irreversibly",
+    "forward"
+  ],
+  "created": "2026-05-07T14:06:20.925541",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W / 2, H / 2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W / 2, H / 2, 20, 0, 2 * Math.PI * (1 + t / 10));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W / 2, H / 2);\n  ctx.lineTo(W / 2 + 30 * Math.sin(t), H / 2 + 30 * Math.cos(t));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W / 2 + 30 * Math.sin(t), H / 2 + 30 * Math.cos(t), 10, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.restore();\n}"
+}

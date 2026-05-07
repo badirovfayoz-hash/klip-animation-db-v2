@@ -1,0 +1,15 @@
+{
+  "id": "book_analysis_republic_plato_justice_ideal_state",
+  "category": "book_analysis",
+  "topic": "republic plato justice ideal state",
+  "tags": [
+    "republic",
+    "plato",
+    "justice",
+    "ideal",
+    "state"
+  ],
+  "created": "2026-05-07T14:06:10.949992",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // Philosopher-king\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2, H/2 + 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 100);\n  ctx.lineTo(W/2 - 30, H/2 + 130);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 100);\n  ctx.lineTo(W/2 + 30, H/2 + 130);\n  ctx.stroke();\n  \n  // Book\n  ctx.fillStyle = 'black';\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillText('Republic', W/2, H/2 - 70);\n  \n  // Justice scale\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 + 200);\n  ctx.lineTo(W/2 + 100, H/2 + 200);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 - 50, H/2 + 200, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 + 50, H/2 + 200, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.fillStyle = 'black';\n  ctx.font = '18px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillText('Virtue', W/2 - 50, H/2 + 230);\n  ctx.fillText('Vice', W/2 + 50, H/2 + 230);\n  \n  // Ideal state\n  ctx.fillStyle = 'black';\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillText('Kallipolis', W/2, H - 50);\n  \n  // Animation\n  ctx.save();\n  ctx.translate(W/2, H/2);\n  ctx.rotate(Math.sin(t));\n  ctx.beginPath();\n  ctx.moveTo(0, -50);\n  ctx.lineTo(-30, -70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(0, -50);\n  ctx.lineTo(30, -70);\n  ctx.stroke();\n  ctx.restore();\n  \n  ctx.restore();\n}"
+}

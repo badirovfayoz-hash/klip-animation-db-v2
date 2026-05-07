@@ -1,0 +1,16 @@
+{
+  "id": "psychology_post_traumatic_growth_stronger_after_crisis",
+  "category": "psychology",
+  "topic": "post traumatic growth stronger after crisis",
+  "tags": [
+    "post",
+    "traumatic",
+    "growth",
+    "stronger",
+    "after",
+    "crisis"
+  ],
+  "created": "2026-05-07T14:05:35.994160",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // draw stick figure\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 20, H/2 + 80);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 20, H/2 + 80);\n  ctx.stroke();\n  \n  // draw crisis\n  ctx.fillStyle = 'black';\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillText('CRISIS', W/2, H/2 - 50);\n  \n  // draw growth\n  ctx.fillStyle = 'black';\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillText('GROWTH', W/2, H/2 + 120 + 20*Math.sin(t));\n  \n  // draw arrow\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 80);\n  ctx.lineTo(W/2, H/2 + 120 + 20*Math.sin(t));\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
