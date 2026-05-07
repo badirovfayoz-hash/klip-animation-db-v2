@@ -1,0 +1,15 @@
+{
+  "id": "objects_symbolic_object_meaning_representing_733",
+  "category": "objects",
+  "topic": "symbolic object meaning representing 733",
+  "tags": [
+    "symbolic",
+    "object",
+    "meaning",
+    "representing",
+    "733"
+  ],
+  "created": "2026-05-07T15:50:02.904074",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  \n  // Seven\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 - 50);\n  ctx.lineTo(W/2 + 50, H/2 - 50);\n  ctx.lineTo(W/2 + 50, H/2 + 50);\n  ctx.lineTo(W/2 - 50, H/2 + 50);\n  ctx.lineTo(W/2 - 50, H/2 - 50);\n  ctx.stroke();\n  \n  // Three\n  ctx.beginPath();\n  ctx.arc(W/2 - 80, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 - 80, H/2 + 40, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 - 80, H/2 + 80, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // Three\n  ctx.beginPath();\n  ctx.arc(W/2 + 30, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 + 30, H/2 + 40, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 + 30, H/2 + 80, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // oscillation\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + Math.sin(t) * 20, 10, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  ctx.restore();\n}"
+}
