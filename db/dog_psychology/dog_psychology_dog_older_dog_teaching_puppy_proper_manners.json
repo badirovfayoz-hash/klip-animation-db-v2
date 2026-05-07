@@ -1,0 +1,17 @@
+{
+  "id": "dog_psychology_dog_older_dog_teaching_puppy_proper_manners",
+  "category": "dog_psychology",
+  "topic": "dog older dog teaching puppy proper manners",
+  "tags": [
+    "dog",
+    "older",
+    "dog",
+    "teaching",
+    "puppy",
+    "proper",
+    "manners"
+  ],
+  "created": "2026-05-07T15:12:53.206447",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // older dog\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2 - 100, H/2, 30, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 + 30);\n  ctx.lineTo(W/2 - 100, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 + 50);\n  ctx.lineTo(W/2 - 80, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 + 50);\n  ctx.lineTo(W/2 - 120, H/2 + 70);\n  ctx.stroke();\n  \n  // puppy\n  ctx.beginPath();\n  ctx.arc(W/2 + 100, H/2, 20 + 10 * Math.sin(t), 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100, H/2 + 20 + 10 * Math.sin(t));\n  ctx.lineTo(W/2 + 100, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100, H/2 + 35);\n  ctx.lineTo(W/2 + 80, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100, H/2 + 35);\n  ctx.lineTo(W/2 + 120, H/2 + 50);\n  ctx.stroke();\n  \n  // teaching\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 90, H/2 + 60);\n  ctx.lineTo(W/2 + 90, H/2 + 40 + 10 * Math.sin(t));\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

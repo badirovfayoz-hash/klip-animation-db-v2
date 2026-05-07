@@ -1,0 +1,15 @@
+{
+  "id": "animals_snake_shedding_skin_renewal_emerging",
+  "category": "animals",
+  "topic": "snake shedding skin renewal emerging",
+  "tags": [
+    "snake",
+    "shedding",
+    "skin",
+    "renewal",
+    "emerging"
+  ],
+  "created": "2026-05-07T15:13:07.796698",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // snake body\n  ctx.beginPath();\n  ctx.moveTo(W / 2 + Math.sin(t) * 50, H / 2);\n  for (let i = 0; i < 10; i++) {\n    ctx.lineTo(W / 2 + Math.sin(t + i) * 50, H / 2 + i * 20);\n  }\n  ctx.stroke();\n  \n  // shedding skin\n  ctx.globalAlpha = 0.5;\n  ctx.beginPath();\n  ctx.moveTo(W / 2 + Math.sin(t + Math.PI) * 50, H / 2);\n  for (let i = 0; i < 10; i++) {\n    ctx.lineTo(W / 2 + Math.sin(t + Math.PI + i) * 50, H / 2 + i * 20);\n  }\n  ctx.stroke();\n  ctx.globalAlpha = 1;\n  \n  // head\n  ctx.beginPath();\n  ctx.arc(W / 2 + Math.sin(t) * 50, H / 2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // eyes\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W / 2 + Math.sin(t) * 50 - 5, H / 2 - 5, 2, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W / 2 + Math.sin(t) * 50 + 5, H / 2 - 5, 2, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  ctx.restore();\n}"
+}
