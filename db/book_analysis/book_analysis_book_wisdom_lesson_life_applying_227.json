@@ -1,0 +1,16 @@
+{
+  "id": "book_analysis_book_wisdom_lesson_life_applying_227",
+  "category": "book_analysis",
+  "topic": "book wisdom lesson life applying 227",
+  "tags": [
+    "book",
+    "wisdom",
+    "lesson",
+    "life",
+    "applying",
+    "227"
+  ],
+  "created": "2026-05-07T15:25:46.358815",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // Draw a book\n  ctx.fillStyle = '#663300';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.rect(W/2 - 50, H/2 - 75, 100, 150);\n  ctx.stroke();\n  \n  // Draw a stick figure\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 100, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 80);\n  ctx.lineTo(W/2, H/2 - 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 60);\n  ctx.lineTo(W/2 - 30, H/2 - 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 60);\n  ctx.lineTo(W/2 + 30, H/2 - 40);\n  ctx.stroke();\n  \n  // Draw a lightbulb above the stick figure's head\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 150 + 20 * Math.sin(t), 15, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 150 + 20 * Math.sin(t));\n  ctx.lineTo(W/2, H/2 - 120);\n  ctx.stroke();\n  \n  // Draw a line from the book to the stick figure's hand\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50, H/2 - 25);\n  ctx.lineTo(W/2 - 30, H/2 - 40);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
