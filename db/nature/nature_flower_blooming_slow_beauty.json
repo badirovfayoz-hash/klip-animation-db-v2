@@ -1,0 +1,14 @@
+{
+  "id": "nature_flower_blooming_slow_beauty",
+  "category": "nature",
+  "topic": "flower blooming slow beauty",
+  "tags": [
+    "flower",
+    "blooming",
+    "slow",
+    "beauty"
+  ],
+  "created": "2026-05-07T07:46:36.308796",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  // center of the flower\n  let centerX = W / 2;\n  let centerY = H / 2;\n  // draw stem\n  ctx.beginPath();\n  ctx.moveTo(centerX, H - 20);\n  ctx.lineTo(centerX, H / 2 + 50 * Math.sin(t));\n  ctx.stroke();\n  // draw flower\n  let radius = 20 + 10 * Math.sin(t * 2);\n  ctx.beginPath();\n  ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);\n  ctx.stroke();\n  // draw petals\n  for (let i = 0; i < 6; i++) {\n    let angle = i * Math.PI / 3 + t;\n    let petalX = centerX + (radius + 10 * Math.sin(t)) * Math.cos(angle);\n    let petalY = centerY + (radius + 10 * Math.sin(t)) * Math.sin(angle);\n    ctx.beginPath();\n    ctx.arc(petalX, petalY, 10, 0, 2 * Math.PI);\n    ctx.stroke();\n  }\n  ctx.restore();\n}"
+}
