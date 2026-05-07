@@ -1,0 +1,15 @@
+{
+  "id": "food_nutrition_carrot_ground_growing_vitamin_a",
+  "category": "food_nutrition",
+  "topic": "carrot ground growing vitamin a",
+  "tags": [
+    "carrot",
+    "ground",
+    "growing",
+    "vitamin",
+    "a"
+  ],
+  "created": "2026-05-07T13:45:56.243052",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // draw ground\n  ctx.beginPath();\n  ctx.moveTo(0, H - 50);\n  ctx.lineTo(W, H - 50);\n  ctx.stroke();\n  \n  // draw carrot\n  ctx.fillStyle = 'orange';\n  ctx.beginPath();\n  ctx.arc(W/2, H - 75 + 20*Math.sin(t), 20, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.strokeStyle = 'black';\n  ctx.stroke();\n  \n  // draw leaves\n  ctx.fillStyle = 'green';\n  ctx.beginPath();\n  ctx.arc(W/2, H - 120 + 10*Math.sin(t), 10, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2 - 10, H - 110 + 10*Math.sin(t), 5, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2 + 10, H - 110 + 10*Math.sin(t), 5, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.strokeStyle = 'black';\n  ctx.stroke();\n  \n  // draw vitamin A\n  ctx.font = '20px Arial';\n  ctx.fillStyle = 'black';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'top';\n  ctx.fillText('Vitamin A', W/2, H - 150 + 10*Math.sin(t));\n  \n  ctx.restore();\n}"
+}

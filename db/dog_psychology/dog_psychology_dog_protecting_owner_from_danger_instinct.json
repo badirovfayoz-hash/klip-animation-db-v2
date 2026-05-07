@@ -1,0 +1,16 @@
+{
+  "id": "dog_psychology_dog_protecting_owner_from_danger_instinct",
+  "category": "dog_psychology",
+  "topic": "dog protecting owner from danger instinct",
+  "tags": [
+    "dog",
+    "protecting",
+    "owner",
+    "from",
+    "danger",
+    "instinct"
+  ],
+  "created": "2026-05-07T13:45:41.107141",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // owner\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 - 15, H/2 + 45);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 + 15, H/2 + 45);\n  ctx.stroke();\n  \n  // dog\n  ctx.beginPath();\n  ctx.arc(W/2 + 50 + 30*Math.sin(t), H/2, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50 + 30*Math.sin(t), H/2 + 20);\n  ctx.lineTo(W/2 + 50 + 30*Math.sin(t), H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50 + 30*Math.sin(t), H/2 + 30);\n  ctx.lineTo(W/2 + 35 + 30*Math.sin(t), H/2 + 45);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 50 + 30*Math.sin(t), H/2 + 30);\n  ctx.lineTo(W/2 + 65 + 30*Math.sin(t), H/2 + 45);\n  ctx.stroke();\n  \n  // danger\n  ctx.beginPath();\n  ctx.arc(W/2 - 50 + 30*Math.cos(t), H/2, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50 + 30*Math.cos(t), H/2 + 20);\n  ctx.lineTo(W/2 - 50 + 30*Math.cos(t), H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50 + 30*Math.cos(t), H/2 + 30);\n  ctx.lineTo(W/2 - 65 + 30*Math.cos(t), H/2 + 45);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 50 + 30*Math.cos(t), H/2 + 30);\n  ctx.lineTo(W/2 - 35 + 30*Math.cos(t), H/2 + 45);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
