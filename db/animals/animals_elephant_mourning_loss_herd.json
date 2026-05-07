@@ -1,0 +1,14 @@
+{
+  "id": "animals_elephant_mourning_loss_herd",
+  "category": "animals",
+  "topic": "elephant mourning loss herd",
+  "tags": [
+    "elephant",
+    "mourning",
+    "loss",
+    "herd"
+  ],
+  "created": "2026-05-07T13:59:03.912494",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  \n  // elephant body\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  // elephant head\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 70, 30, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  // elephant ears\n  ctx.beginPath();\n  ctx.arc(W/2 - 40, H/2 - 90, 20, 0, Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 + 40, H/2 - 90, 20, 0, Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  // elephant tusk\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 10, H/2 - 40);\n  ctx.lineTo(W/2 - 30, H/2 - 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 10, H/2 - 40);\n  ctx.lineTo(W/2 + 30, H/2 - 70);\n  ctx.stroke();\n  \n  // mourning expression\n  ctx.beginPath();\n  ctx.arc(W/2 - 15, H/2 - 100, 5, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2 + 15, H/2 - 100, 5, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 20, H/2 - 110);\n  ctx.lineTo(W/2 + 20, H/2 - 110);\n  ctx.stroke();\n  \n  // lost herd in background\n  ctx.fillStyle = 'gray';\n  ctx.globalAlpha = 0.5;\n  ctx.beginPath();\n  ctx.arc(W/2 + 100, H/2, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2 + 150, H/2 - 30, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2 + 200, H/2 + 30, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.globalAlpha = 1;\n  \n  // movement\n  ctx.translate(W/2, H/2);\n  ctx.rotate(Math.sin(t));\n  ctx.translate(-W/2, -H/2);\n  \n  ctx.restore();\n}"
+}

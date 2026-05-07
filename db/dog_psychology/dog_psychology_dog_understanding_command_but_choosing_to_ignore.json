@@ -1,0 +1,17 @@
+{
+  "id": "dog_psychology_dog_understanding_command_but_choosing_to_ignore",
+  "category": "dog_psychology",
+  "topic": "dog understanding command but choosing to ignore",
+  "tags": [
+    "dog",
+    "understanding",
+    "command",
+    "but",
+    "choosing",
+    "to",
+    "ignore"
+  ],
+  "created": "2026-05-07T13:58:58.641727",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // draw dog\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2, H/2 + 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 75);\n  ctx.lineTo(W/2 - 25 + 20 * Math.sin(t), H/2 + 125);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 75);\n  ctx.lineTo(W/2 + 25 - 20 * Math.sin(t), H/2 + 125);\n  ctx.stroke();\n  \n  // draw owner\n  ctx.beginPath();\n  ctx.arc(W/2 - 150, H/2, 30, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 150, H/2 + 30);\n  ctx.lineTo(W/2 - 150, H/2 + 80);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 150, H/2 + 55);\n  ctx.lineTo(W/2 - 175, H/2 + 90);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 150, H/2 + 55);\n  ctx.lineTo(W/2 - 125, H/2 + 90);\n  ctx.stroke();\n  \n  // draw speech bubble\n  ctx.beginPath();\n  ctx.arc(W/2 - 170, H/2 - 50, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.font = '20px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Sit!', W/2 - 170, H/2 - 50);\n  \n  // draw dog's ignoring expression\n  ctx.beginPath();\n  ctx.arc(W/2 + 10 * Math.sin(t), H/2 - 40, 10, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 + 10 * Math.cos(t), H/2 - 60, 10, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 20);\n  ctx.lineTo(W/2 + 20 * Math.sin(t), H/2 - 40);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
