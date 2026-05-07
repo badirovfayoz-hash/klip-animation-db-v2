@@ -1,0 +1,15 @@
+{
+  "id": "objects_symbolic_object_meaning_representing_504",
+  "category": "objects",
+  "topic": "symbolic object meaning representing 504",
+  "tags": [
+    "symbolic",
+    "object",
+    "meaning",
+    "representing",
+    "504"
+  ],
+  "created": "2026-05-07T15:43:19.899320",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  // 504 as a broken circle (0) and a circle with a line through it, two distinct shapes\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 + 100, H/2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100 - 50, H/2);\n  ctx.lineTo(W/2 + 100 + 50, H/2);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 - 100, H/2, 50, 0, Math.PI * (1 + Math.sin(t)));\n  ctx.stroke();\n  ctx.restore();\n}"
+}
