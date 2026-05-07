@@ -1,0 +1,16 @@
+{
+  "id": "animals_fox_cubs_playing_tumbling_learning_skills",
+  "category": "animals",
+  "topic": "fox cubs playing tumbling learning skills",
+  "tags": [
+    "fox",
+    "cubs",
+    "playing",
+    "tumbling",
+    "learning",
+    "skills"
+  ],
+  "created": "2026-05-07T15:46:39.789807",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // Draw fox cubs\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  \n  // Cub 1\n  ctx.beginPath();\n  ctx.arc(W/4 + Math.sin(t)*20, H/2 + Math.cos(t)*20, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/4 + Math.sin(t)*20, H/2 + Math.cos(t)*20 + 20);\n  ctx.lineTo(W/4 + Math.sin(t)*20 - 10, H/2 + Math.cos(t)*20 + 40);\n  ctx.lineTo(W/4 + Math.sin(t)*20 + 10, H/2 + Math.cos(t)*20 + 40);\n  ctx.stroke();\n  \n  // Cub 2\n  ctx.beginPath();\n  ctx.arc(W/4*3 + Math.sin(t+Math.PI)*20, H/2 + Math.cos(t+Math.PI)*20, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/4*3 + Math.sin(t+Math.PI)*20, H/2 + Math.cos(t+Math.PI)*20 + 20);\n  ctx.lineTo(W/4*3 + Math.sin(t+Math.PI)*20 - 10, H/2 + Math.cos(t+Math.PI)*20 + 40);\n  ctx.lineTo(W/4*3 + Math.sin(t+Math.PI)*20 + 10, H/2 + Math.cos(t+Math.PI)*20 + 40);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
