@@ -1,0 +1,15 @@
+{
+  "id": "emotions_frustration_obstacle_repeated_banging_wall",
+  "category": "emotions",
+  "topic": "frustration obstacle repeated banging wall",
+  "tags": [
+    "frustration",
+    "obstacle",
+    "repeated",
+    "banging",
+    "wall"
+  ],
+  "created": "2026-05-07T16:36:21.304117",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // stick figure\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 20, H/2 + 80);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 20, H/2 + 80);\n  ctx.stroke();\n  \n  // wall\n  ctx.lineWidth = 5;\n  ctx.beginPath();\n  ctx.rect(W/2 + 50, 0, 20, H);\n  ctx.stroke();\n  \n  // banging\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 30 + 20 * Math.sin(t), H/2 + 80);\n  ctx.lineTo(W/2 + 50, H/2 + 80 - 20 * Math.sin(t));\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
