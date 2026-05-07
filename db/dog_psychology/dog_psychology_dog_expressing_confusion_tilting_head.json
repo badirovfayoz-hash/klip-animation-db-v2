@@ -1,0 +1,15 @@
+{
+  "id": "dog_psychology_dog_expressing_confusion_tilting_head",
+  "category": "dog_psychology",
+  "topic": "dog expressing confusion tilting head",
+  "tags": [
+    "dog",
+    "expressing",
+    "confusion",
+    "tilting",
+    "head"
+  ],
+  "created": "2026-05-07T13:42:36.837707",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // dog body\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  \n  // head\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 25, 25, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // ears\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 15, H/2 - 40);\n  ctx.lineTo(W/2 - 25, H/2 - 60);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 15, H/2 - 40);\n  ctx.lineTo(W/2 + 25, H/2 - 60);\n  ctx.stroke();\n  \n  // tilting head\n  ctx.save();\n  ctx.translate(W/2, H/2);\n  ctx.rotate(Math.sin(t) * 0.5);\n  ctx.beginPath();\n  ctx.arc(0, -25, 25, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.restore();\n  \n  // eyes\n  ctx.beginPath();\n  ctx.arc(W/2 - 10, H/2 - 50 + Math.sin(t) * 10, 5, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2 + 10, H/2 - 50 + Math.sin(t) * 10, 5, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
