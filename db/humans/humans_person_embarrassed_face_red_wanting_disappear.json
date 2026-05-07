@@ -1,0 +1,16 @@
+{
+  "id": "humans_person_embarrassed_face_red_wanting_disappear",
+  "category": "humans",
+  "topic": "person embarrassed face red wanting disappear",
+  "tags": [
+    "person",
+    "embarrassed",
+    "face",
+    "red",
+    "wanting",
+    "disappear"
+  ],
+  "created": "2026-05-07T16:17:28.319926",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  \n  // head\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // body\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2, H/2 + 150);\n  ctx.stroke();\n  \n  // arms\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 70);\n  ctx.lineTo(W/2 - 50, H/2 + 120);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 70);\n  ctx.lineTo(W/2 + 50, H/2 + 120);\n  ctx.stroke();\n  \n  // legs\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 150);\n  ctx.lineTo(W/2 - 30, H/2 + 200);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 150);\n  ctx.lineTo(W/2 + 30, H/2 + 200);\n  ctx.stroke();\n  \n  // embarrassed face\n  ctx.fillStyle = '#ffcccc';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // eyes\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2 - 15, H/2 - 15, 5, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2 + 15, H/2 - 15, 5, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // mouth\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 10, 10, 0, Math.PI);\n  ctx.stroke();\n  \n  // want to disappear\n  ctx.fillStyle = 'black';\n  ctx.globalAlpha = 0.5 + 0.5 * Math.sin(t);\n  ctx.fillRect(W/2 - 60, H/2 - 60, 120, 120);\n  ctx.globalAlpha = 1;\n  \n  ctx.restore();\n}"
+}
