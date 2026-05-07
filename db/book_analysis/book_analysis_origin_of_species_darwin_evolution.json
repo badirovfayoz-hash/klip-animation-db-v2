@@ -1,0 +1,15 @@
+{
+  "id": "book_analysis_origin_of_species_darwin_evolution",
+  "category": "book_analysis",
+  "topic": "origin of species darwin evolution",
+  "tags": [
+    "origin",
+    "of",
+    "species",
+    "darwin",
+    "evolution"
+  ],
+  "created": "2026-05-07T14:01:13.888959",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // Draw tree of life\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.moveTo(W / 2, 0);\n  ctx.lineTo(W / 2, H);\n  ctx.stroke();\n  \n  // Draw finches\n  ctx.fillStyle = 'black';\n  for (let i = 0; i < 5; i++) {\n    ctx.save();\n    ctx.translate(W / 2 + Math.sin(t + i) * 100, H / 2 + Math.cos(t + i) * 50);\n    ctx.beginPath();\n    ctx.arc(0, 0, 10, 0, 2 * Math.PI);\n    ctx.fill();\n    ctx.lineWidth = 3;\n    ctx.beginPath();\n    ctx.moveTo(0, 10);\n    ctx.lineTo(0, 20);\n    ctx.stroke();\n    ctx.beginPath();\n    ctx.moveTo(0, 10);\n    ctx.lineTo(-5, 15);\n    ctx.stroke();\n    ctx.beginPath();\n    ctx.moveTo(0, 10);\n    ctx.lineTo(5, 15);\n    ctx.stroke();\n    ctx.restore();\n  }\n  \n  // Draw darwin\n  ctx.save();\n  ctx.translate(W / 2, H - 50);\n  ctx.beginPath();\n  ctx.arc(0, 0, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.moveTo(0, 20);\n  ctx.lineTo(0, 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(0, 20);\n  ctx.lineTo(-10, 30);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(0, 20);\n  ctx.lineTo(10, 30);\n  ctx.stroke();\n  ctx.restore();\n  \n  ctx.restore();\n}"
+}

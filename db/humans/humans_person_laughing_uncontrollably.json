@@ -1,0 +1,13 @@
+{
+  "id": "humans_person_laughing_uncontrollably",
+  "category": "humans",
+  "topic": "person laughing uncontrollably",
+  "tags": [
+    "person",
+    "laughing",
+    "uncontrollably"
+  ],
+  "created": "2026-05-07T14:01:23.695233",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 25);\n  ctx.lineTo(W/2, H/2 + 50 + 10 * Math.sin(t));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 25, H/2 + 50);\n  ctx.lineTo(W/2 - 25 + 10 * Math.sin(t), H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 25, H/2 + 50);\n  ctx.lineTo(W/2 + 25 - 10 * Math.sin(t), H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 15, H/2 - 10);\n  ctx.lineTo(W/2 - 30, H/2 - 20 + 5 * Math.sin(t));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 15, H/2 - 10);\n  ctx.lineTo(W/2 + 30, H/2 - 20 - 5 * Math.sin(t));\n  ctx.stroke();\n  ctx.fillStyle = 'black';\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillText('HA', W/2 + 5 * Math.sin(2 * t), H/2 - 40 + 10 * Math.sin(t));\n  ctx.restore();\n}"
+}
