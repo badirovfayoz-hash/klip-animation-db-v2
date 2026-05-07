@@ -1,0 +1,14 @@
+{
+  "id": "backgrounds_street_market_colorful_busy",
+  "category": "backgrounds",
+  "topic": "street market colorful busy",
+  "tags": [
+    "street",
+    "market",
+    "colorful",
+    "busy"
+  ],
+  "created": "2026-05-07T13:52:26.755298",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // stalls\n  ctx.fillStyle = '#ffd7be';\n  ctx.fillRect(50, H/2 - 50, 100, 100);\n  ctx.fillRect(W-150, H/2 - 50, 100, 100);\n  \n  // people\n  ctx.fillStyle = '#ffffff';\n  ctx.beginPath();\n  ctx.arc(100, H/2, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W-100, H/2, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // market goods\n  ctx.fillStyle = '#ff99cc';\n  ctx.fillRect(70, H/2 - 20, 20, 20);\n  ctx.fillStyle = '#ccff99';\n  ctx.fillRect(W-120, H/2 - 20, 20, 20);\n  \n  // moving goods\n  ctx.fillStyle = '#99ccff';\n  ctx.fillRect(150 + 50 * Math.sin(t), H/2 - 50, 20, 20);\n  ctx.fillStyle = '#ffcc99';\n  ctx.fillRect(W-200 + 50 * Math.cos(t), H/2 - 50, 20, 20);\n  \n  // outlines\n  ctx.strokeStyle = '#000000';\n  ctx.lineWidth = 3;\n  ctx.strokeRect(50, H/2 - 50, 100, 100);\n  ctx.strokeRect(W-150, H/2 - 50, 100, 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(100, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W-100, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
