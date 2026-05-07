@@ -1,0 +1,15 @@
+{
+  "id": "events_life_event_changing_moment_1665",
+  "category": "events",
+  "topic": "life event changing moment 1665",
+  "tags": [
+    "life",
+    "event",
+    "changing",
+    "moment",
+    "1665"
+  ],
+  "created": "2026-05-07T15:30:50.980136",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // ground\n  ctx.beginPath();\n  ctx.moveTo(0, H - 50);\n  ctx.lineTo(W, H - 50);\n  ctx.stroke();\n  \n  // character\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 20, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 20, H/2 + 70);\n  ctx.stroke();\n  \n  // life event changing moment\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('1665', W/2, H/2 - 30);\n  \n  // smooth loop\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 60, 10, 0, 2 * Math.PI);\n  ctx.fillStyle = 'black';\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 60, 10 + 5 * Math.sin(t), 0, 2 * Math.PI);\n  ctx.strokeStyle = 'black';\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
