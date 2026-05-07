@@ -1,0 +1,16 @@
+{
+  "id": "philosophy_confucius_student_teacher_wisdom_moral_cultivation",
+  "category": "philosophy",
+  "topic": "confucius student teacher wisdom moral cultivation",
+  "tags": [
+    "confucius",
+    "student",
+    "teacher",
+    "wisdom",
+    "moral",
+    "cultivation"
+  ],
+  "created": "2026-05-07T16:27:12.061775",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // Draw Confucius\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2 - 100, H/2, 30, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 + 30);\n  ctx.lineTo(W/2 - 100, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 + 50);\n  ctx.lineTo(W/2 - 120, H/2 + 80);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 + 50);\n  ctx.lineTo(W/2 - 80, H/2 + 80);\n  ctx.stroke();\n  \n  // Draw student\n  ctx.beginPath();\n  ctx.arc(W/2 + 100, H/2, 30, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100, H/2 + 30);\n  ctx.lineTo(W/2 + 100, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100, H/2 + 50);\n  ctx.lineTo(W/2 + 120, H/2 + 80);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100, H/2 + 50);\n  ctx.lineTo(W/2 + 80, H/2 + 80);\n  ctx.stroke();\n  \n  // Draw wisdom symbol\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 50, 20 + 10 * Math.sin(t), 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // Draw moral cultivation text\n  ctx.font = '20px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Moral Cultivation', W/2, H/2 - 100 + 20 * Math.cos(t));\n  \n  ctx.restore();\n}"
+}
