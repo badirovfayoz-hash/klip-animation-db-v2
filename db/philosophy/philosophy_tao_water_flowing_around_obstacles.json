@@ -1,0 +1,15 @@
+{
+  "id": "philosophy_tao_water_flowing_around_obstacles",
+  "category": "philosophy",
+  "topic": "tao water flowing around obstacles",
+  "tags": [
+    "tao",
+    "water",
+    "flowing",
+    "around",
+    "obstacles"
+  ],
+  "created": "2026-05-07T13:54:54.014836",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // draw obstacles\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.rect(W/4, H/4, W/2, H/2);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.rect(W/2, H/2, W/4, H/4);\n  ctx.stroke();\n  \n  // draw water flow\n  ctx.lineWidth = 2;\n  ctx.strokeStyle = 'black';\n  for (let i = 0; i < 10; i++) {\n    ctx.beginPath();\n    ctx.moveTo(0, H/2 + Math.sin(t + i) * 20);\n    ctx.bezierCurveTo(W/4 + Math.cos(t + i) * 20, H/2 + Math.sin(t + i) * 20, \n                       W/2 + Math.cos(t + i) * 10, H/2 + Math.sin(t + i) * 10, \n                       W, H/2 + Math.sin(t + i) * 10);\n    ctx.stroke();\n  }\n  \n  // draw tao symbol\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 10, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

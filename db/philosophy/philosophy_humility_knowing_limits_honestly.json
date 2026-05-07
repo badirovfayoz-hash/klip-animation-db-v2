@@ -1,0 +1,14 @@
+{
+  "id": "philosophy_humility_knowing_limits_honestly",
+  "category": "philosophy",
+  "topic": "humility knowing limits honestly",
+  "tags": [
+    "humility",
+    "knowing",
+    "limits",
+    "honestly"
+  ],
+  "created": "2026-05-07T13:54:58.672848",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  \n  // character\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 20, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 20, H/2 + 70);\n  ctx.stroke();\n  \n  // limit line\n  ctx.beginPath();\n  ctx.moveTo(0, H/2 + 100 + 50*Math.sin(t));\n  ctx.lineTo(W, H/2 + 100 + 50*Math.sin(t));\n  ctx.stroke();\n  \n  // character movement\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 50 + 20*Math.sin(t), 5, 0, 2*Math.PI);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

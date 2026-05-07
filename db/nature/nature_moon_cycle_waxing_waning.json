@@ -1,0 +1,14 @@
+{
+  "id": "nature_moon_cycle_waxing_waning",
+  "category": "nature",
+  "topic": "moon cycle waxing waning",
+  "tags": [
+    "moon",
+    "cycle",
+    "waxing",
+    "waning"
+  ],
+  "created": "2026-05-07T13:55:08.236725",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  let moonSize = 100;\n  let moonX = W / 2;\n  let moonY = H / 2;\n  let phase = Math.sin(t);\n  if (phase < 0) {\n    phase = -phase;\n    ctx.beginPath();\n    ctx.arc(moonX, moonY, moonSize, Math.PI / 2, Math.PI * (1.5 + phase));\n    ctx.lineTo(moonX, moonY);\n    ctx.fill();\n  } else {\n    ctx.beginPath();\n    ctx.arc(moonX, moonY, moonSize, Math.PI / 2 - phase * Math.PI, Math.PI * (1.5 + phase));\n    ctx.lineTo(moonX, moonY);\n    ctx.fill();\n  }\n  ctx.beginPath();\n  ctx.arc(moonX, moonY, moonSize, 0, Math.PI * 2);\n  ctx.stroke();\n  ctx.restore();\n}"
+}

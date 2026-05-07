@@ -1,0 +1,15 @@
+{
+  "id": "psychology_imposter_syndrome_doubting_real_success",
+  "category": "psychology",
+  "topic": "imposter syndrome doubting real success",
+  "tags": [
+    "imposter",
+    "syndrome",
+    "doubting",
+    "real",
+    "success"
+  ],
+  "created": "2026-05-07T13:55:03.507081",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // character\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // doubt cloud\n  ctx.beginPath();\n  ctx.arc(W/2 + 30 + 10 * Math.sin(t), H/2 - 20 + 10 * Math.cos(t), 10, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // success trophy\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 30, H/2 - 20);\n  ctx.lineTo(W/2 - 30, H/2 + 20);\n  ctx.lineTo(W/2 - 50, H/2);\n  ctx.closePath();\n  ctx.stroke();\n  \n  // doubt lines\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 30 + 10 * Math.sin(t), H/2 - 20 + 10 * Math.cos(t));\n  ctx.lineTo(W/2 - 30, H/2 - 20);\n  ctx.stroke();\n  \n  // imposter mask\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 15, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
