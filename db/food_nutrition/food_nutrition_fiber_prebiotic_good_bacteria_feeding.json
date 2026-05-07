@@ -1,0 +1,15 @@
+{
+  "id": "food_nutrition_fiber_prebiotic_good_bacteria_feeding",
+  "category": "food_nutrition",
+  "topic": "fiber prebiotic good bacteria feeding",
+  "tags": [
+    "fiber",
+    "prebiotic",
+    "good",
+    "bacteria",
+    "feeding"
+  ],
+  "created": "2026-05-07T15:19:10.770401",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // Draw good bacteria\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.fillStyle = 'white';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  // Draw fiber prebiotic\n  ctx.fillStyle = 'brown';\n  ctx.beginPath();\n  ctx.arc(W/2 + 50 + 20 * Math.sin(t), H/2, 10, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // Draw feeding action\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2);\n  ctx.lineTo(W/2 + 50 + 20 * Math.sin(t), H/2);\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 3;\n  ctx.stroke();\n  \n  // Draw smile on good bacteria\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 10, 5, 0, Math.PI);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

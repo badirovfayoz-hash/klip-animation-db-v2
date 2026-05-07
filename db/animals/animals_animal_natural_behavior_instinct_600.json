@@ -1,0 +1,15 @@
+{
+  "id": "animals_animal_natural_behavior_instinct_600",
+  "category": "animals",
+  "topic": "animal natural behavior instinct 600",
+  "tags": [
+    "animal",
+    "natural",
+    "behavior",
+    "instinct",
+    "600"
+  ],
+  "created": "2026-05-07T15:19:00.398570",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // Draw bird\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2 + Math.sin(t) * 100, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + Math.sin(t) * 100, H/2 + 20);\n  ctx.lineTo(W/2 + Math.sin(t) * 100, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + Math.sin(t) * 100, H/2 + 20);\n  ctx.lineTo(W/2 + Math.sin(t) * 100 - 20, H/2 + 30);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + Math.sin(t) * 100, H/2 + 20);\n  ctx.lineTo(W/2 + Math.sin(t) * 100 + 20, H/2 + 30);\n  ctx.stroke();\n  \n  // Draw fish\n  ctx.beginPath();\n  ctx.arc(W/2 + Math.cos(t) * 150, H/2 + 100, 30, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + Math.cos(t) * 150, H/2 + 130);\n  ctx.lineTo(W/2 + Math.cos(t) * 150, H/2 + 160);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + Math.cos(t) * 150, H/2 + 130);\n  ctx.lineTo(W/2 + Math.cos(t) * 150 - 30, H/2 + 145);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + Math.cos(t) * 150, H/2 + 130);\n  ctx.lineTo(W/2 + Math.cos(t) * 150 + 30, H/2 + 145);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
