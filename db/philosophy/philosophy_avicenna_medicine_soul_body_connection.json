@@ -1,0 +1,15 @@
+{
+  "id": "philosophy_avicenna_medicine_soul_body_connection",
+  "category": "philosophy",
+  "topic": "avicenna medicine soul body connection",
+  "tags": [
+    "avicenna",
+    "medicine",
+    "soul",
+    "body",
+    "connection"
+  ],
+  "created": "2026-05-07T15:49:07.486321",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // body\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // soul\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 - 70 - 20 * Math.sin(t), 30, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // connection\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 - 70 - 20 * Math.sin(t));\n  ctx.stroke();\n  \n  // avicenna\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'top';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Avicenna', W/2, 20);\n  \n  // medicine\n  ctx.font = '18px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'bottom';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Medicine', W/2, H - 20);\n  \n  // soul body connection\n  ctx.font = '18px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Soul & Body', W/2, H/2 - 100 - 10 * Math.sin(t));\n  ctx.restore();\n}"
+}
