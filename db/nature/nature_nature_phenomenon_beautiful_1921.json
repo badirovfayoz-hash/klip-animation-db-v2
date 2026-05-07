@@ -1,0 +1,14 @@
+{
+  "id": "nature_nature_phenomenon_beautiful_1921",
+  "category": "nature",
+  "topic": "nature phenomenon beautiful 1921",
+  "tags": [
+    "nature",
+    "phenomenon",
+    "beautiful",
+    "1921"
+  ],
+  "created": "2026-05-07T15:55:35.593852",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50 + 20 * Math.sin(t), 0, 2 * Math.PI);\n  ctx.stroke();\n  for (let i = 0; i < 10; i++) {\n    ctx.beginPath();\n    ctx.arc(W/2 + (i - 5) * 20, H/2 + 20 * Math.sin(t + i), 5, 0, 2 * Math.PI);\n    ctx.stroke();\n  }\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2);\n  ctx.lineTo(W/2, H/2 + 100 * Math.cos(t));\n  ctx.stroke();\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 100 * Math.cos(t), 10, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.restore();\n}"
+}
