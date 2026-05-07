@@ -1,0 +1,14 @@
+{
+  "id": "food_nutrition_inflammation_diet_causing_disease",
+  "category": "food_nutrition",
+  "topic": "inflammation diet causing disease",
+  "tags": [
+    "inflammation",
+    "diet",
+    "causing",
+    "disease"
+  ],
+  "created": "2026-05-07T13:57:25.025240",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // draw body\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 30, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // draw arms and legs\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 30);\n  ctx.lineTo(W/2 - 40, H/2 - 60);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 - 30);\n  ctx.lineTo(W/2 + 40, H/2 - 60);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 - 40, H/2 + 60);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 30);\n  ctx.lineTo(W/2 + 40, H/2 + 60);\n  ctx.stroke();\n  \n  // draw inflamed area\n  ctx.fillStyle = 'red';\n  ctx.beginPath();\n  ctx.arc(W/2 + 20 + 10 * Math.sin(t), H/2 + 20 + 10 * Math.cos(t), 10, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // draw junk food\n  ctx.fillStyle = 'brown';\n  ctx.beginPath();\n  ctx.rect(W/2 - 50 + 20 * Math.sin(t), H/2 - 80, 20, 10);\n  ctx.fill();\n  \n  // draw healthy food\n  ctx.fillStyle = 'green';\n  ctx.beginPath();\n  ctx.rect(W/2 + 30 + 20 * Math.cos(t), H/2 - 80, 20, 10);\n  ctx.fill();\n  \n  ctx.restore();\n}"
+}

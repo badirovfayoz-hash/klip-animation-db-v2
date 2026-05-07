@@ -1,0 +1,16 @@
+{
+  "id": "philosophy_beauty_in_the_eye_of_beholder",
+  "category": "philosophy",
+  "topic": "beauty in the eye of beholder",
+  "tags": [
+    "beauty",
+    "in",
+    "the",
+    "eye",
+    "of",
+    "beholder"
+  ],
+  "created": "2026-05-07T13:56:16.200896",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // eye\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  // beholder's face\n  ctx.beginPath();\n  ctx.arc(W/2 + 100 + 20 * Math.sin(t), H/2, 30, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100 + 20 * Math.sin(t), H/2 - 40);\n  ctx.lineTo(W/2 + 100 + 20 * Math.sin(t), H/2 + 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100 + 20 * Math.sin(t) - 20, H/2);\n  ctx.lineTo(W/2 + 100 + 20 * Math.sin(t) + 20, H/2);\n  ctx.stroke();\n  \n  // beauty\n  ctx.beginPath();\n  ctx.arc(W/2 - 100 + 20 * Math.cos(t), H/2, 30, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100 + 20 * Math.cos(t), H/2 - 40);\n  ctx.lineTo(W/2 - 100 + 20 * Math.cos(t), H/2 + 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100 + 20 * Math.cos(t) - 20, H/2);\n  ctx.lineTo(W/2 - 100 + 20 * Math.cos(t) + 20, H/2);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
