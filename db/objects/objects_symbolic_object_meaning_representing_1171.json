@@ -1,0 +1,15 @@
+{
+  "id": "objects_symbolic_object_meaning_representing_1171",
+  "category": "objects",
+  "topic": "symbolic object meaning representing 1171",
+  "tags": [
+    "symbolic",
+    "object",
+    "meaning",
+    "representing",
+    "1171"
+  ],
+  "created": "2026-05-07T16:04:53.534253",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  // draw a symbolic object: a house with a clock representing home and time, totaling 1171 days or approximately 3.2 years\n  ctx.beginPath();\n  ctx.rect(W/2 - 50, H/2 - 50, 100, 100);\n  ctx.stroke();\n  // draw a clock\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 40, 0, 2 * Math.PI);\n  ctx.stroke();\n  // draw clock hands\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2);\n  ctx.lineTo(W/2 + 30 * Math.sin(t), H/2 - 30 * Math.cos(t));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2);\n  ctx.lineTo(W/2 + 20 * Math.sin(3 * t), H/2 - 20 * Math.cos(3 * t));\n  ctx.stroke();\n  // draw a number 1, 1, and 7, and a small stick figure in the house\n  ctx.font = '40px Arial';\n  ctx.textAlign = 'left';\n  ctx.textBaseline = 'top';\n  ctx.fillStyle = 'black';\n  ctx.fillText('11', W/2 - 70, H/2 - 120);\n  ctx.fillText('71', W/2 - 70, H/2 - 70);\n  // draw a small stick figure\n  ctx.beginPath();\n  ctx.arc(W/2 - 20, H/2 - 20, 10, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 20, H/2 - 10);\n  ctx.lineTo(W/2 - 20, H/2 + 20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 20, H/2);\n  ctx.lineTo(W/2 - 30, H/2 - 10);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 20, H/2);\n  ctx.lineTo(W/2 - 10, H/2 - 10);\n  ctx.stroke();\n  ctx.restore();\n}"
+}
