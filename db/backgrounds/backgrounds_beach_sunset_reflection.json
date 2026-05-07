@@ -1,0 +1,13 @@
+{
+  "id": "backgrounds_beach_sunset_reflection",
+  "category": "backgrounds",
+  "topic": "beach sunset reflection",
+  "tags": [
+    "beach",
+    "sunset",
+    "reflection"
+  ],
+  "created": "2026-05-07T13:54:15.329427",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.fillStyle = '#ff9900';\n  ctx.fillRect(0, H - 50, W, 50);\n  ctx.fillStyle = '#ffe6cc';\n  ctx.fillRect(0, H - 100, W, 50);\n  ctx.fillStyle = '#ffffcc';\n  ctx.fillRect(0, H - 150, W, 50);\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.moveTo(0, H - 100 + 25 * Math.sin(t));\n  ctx.lineTo(W, H - 100 + 25 * Math.sin(t));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(0, H - 50 + 25 * Math.cos(t));\n  ctx.lineTo(W, H - 50 + 25 * Math.cos(t));\n  ctx.stroke();\n  ctx.restore();\n}"
+}
