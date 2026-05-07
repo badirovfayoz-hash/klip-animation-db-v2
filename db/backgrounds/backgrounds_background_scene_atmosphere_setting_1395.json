@@ -1,0 +1,15 @@
+{
+  "id": "backgrounds_background_scene_atmosphere_setting_1395",
+  "category": "backgrounds",
+  "topic": "background scene atmosphere setting 1395",
+  "tags": [
+    "background",
+    "scene",
+    "atmosphere",
+    "setting",
+    "1395"
+  ],
+  "created": "2026-05-07T16:39:36.297690",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.moveTo(0, H/2 + 50 * Math.sin(t));\n  ctx.lineTo(W, H/2 + 50 * Math.sin(t + Math.PI));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(0, H/2 - 20 * Math.cos(t));\n  ctx.lineTo(W, H/2 - 20 * Math.cos(t + Math.PI));\n  ctx.stroke();\n  ctx.lineWidth = 2;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 10 * Math.sin(t), 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.restore();\n}"
+}
