@@ -1,0 +1,15 @@
+{
+  "id": "food_nutrition_nutrition_health_food_benefit_1433",
+  "category": "food_nutrition",
+  "topic": "nutrition health food benefit 1433",
+  "tags": [
+    "nutrition",
+    "health",
+    "food",
+    "benefit",
+    "1433"
+  ],
+  "created": "2026-05-07T16:07:15.209021",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // Draw characters\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  \n  // Character 1\n  ctx.beginPath();\n  ctx.arc(W/2 - 100, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 + 20);\n  ctx.lineTo(W/2 - 100, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 + 30);\n  ctx.lineTo(W/2 - 120, H/2 + 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100, H/2 + 30);\n  ctx.lineTo(W/2 - 80, H/2 + 40);\n  ctx.stroke();\n  \n  // Character 2\n  ctx.beginPath();\n  ctx.arc(W/2 + 100, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100, H/2 + 20);\n  ctx.lineTo(W/2 + 100, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100, H/2 + 30);\n  ctx.lineTo(W/2 + 120, H/2 + 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100, H/2 + 30);\n  ctx.lineTo(W/2 + 80, H/2 + 40);\n  ctx.stroke();\n  \n  // Food\n  ctx.fillStyle = 'green';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 70 + 20 * Math.sin(t), 10, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.strokeStyle = 'black';\n  ctx.stroke();\n  \n  // Benefits\n  ctx.font = '20px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'top';\n  ctx.fillStyle = 'black';\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 1;\n  ctx.strokeText('Healthy', W/2 - 50, H/2 - 50 + 20 * Math.cos(t));\n  ctx.fillText('Healthy', W/2 - 50, H/2 - 50 + 20 * Math.cos(t));\n  ctx.strokeText('Strong', W/2 + 50, H/2 - 50 + 20 * Math.cos(t));\n  ctx.fillText('Strong', W/2 + 50, H/2 - 50 + 20 * Math.cos(t));\n  \n  ctx.restore();\n}"
+}
