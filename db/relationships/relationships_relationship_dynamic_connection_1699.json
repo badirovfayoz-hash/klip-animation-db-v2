@@ -1,0 +1,14 @@
+{
+  "id": "relationships_relationship_dynamic_connection_1699",
+  "category": "relationships",
+  "topic": "relationship dynamic connection 1699",
+  "tags": [
+    "relationship",
+    "dynamic",
+    "connection",
+    "1699"
+  ],
+  "created": "2026-05-07T15:11:31.634469",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // stick figures\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  \n  // figure 1\n  ctx.beginPath();\n  ctx.arc(W/4, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/4, H/2 + 20);\n  ctx.lineTo(W/4, H/2 + 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/4, H/2 + 50);\n  ctx.lineTo(W/4 - 30, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/4, H/2 + 50);\n  ctx.lineTo(W/4 + 30, H/2 + 70);\n  ctx.stroke();\n  \n  // figure 2\n  ctx.beginPath();\n  ctx.arc(W - W/4, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W - W/4, H/2 + 20);\n  ctx.lineTo(W - W/4, H/2 + 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W - W/4, H/2 + 50);\n  ctx.lineTo(W - W/4 - 30, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W - W/4, H/2 + 50);\n  ctx.lineTo(W - W/4 + 30, H/2 + 70);\n  ctx.stroke();\n  \n  // connection\n  ctx.beginPath();\n  ctx.moveTo(W/4 + 30, H/2 + 70);\n  ctx.lineTo(W - W/4 - 30 + Math.sin(t) * 20, H/2 + 70);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
