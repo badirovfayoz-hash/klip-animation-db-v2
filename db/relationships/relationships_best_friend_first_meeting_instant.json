@@ -1,0 +1,15 @@
+{
+  "id": "relationships_best_friend_first_meeting_instant",
+  "category": "relationships",
+  "topic": "best friend first meeting instant",
+  "tags": [
+    "best",
+    "friend",
+    "first",
+    "meeting",
+    "instant"
+  ],
+  "created": "2026-05-07T15:39:21.208287",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // character 1\n  ctx.beginPath();\n  ctx.arc(W/4, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/4, H/2 + 20);\n  ctx.lineTo(W/4, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/4, H/2 + 30);\n  ctx.lineTo(W/4 - 20, H/2 + 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/4, H/2 + 30);\n  ctx.lineTo(W/4 + 20, H/2 + 40);\n  ctx.stroke();\n  \n  // character 2\n  ctx.beginPath();\n  ctx.arc(W - W/4, H/2, 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W - W/4, H/2 + 20);\n  ctx.lineTo(W - W/4, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W - W/4, H/2 + 30);\n  ctx.lineTo(W - W/4 - 20, H/2 + 40);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W - W/4, H/2 + 30);\n  ctx.lineTo(W - W/4 + 20, H/2 + 40);\n  ctx.stroke();\n  \n  // movement\n  ctx.beginPath();\n  ctx.moveTo(W/4 + 20 + 10 * Math.sin(t), H/2 + 40);\n  ctx.lineTo(W - W/4 - 20 + 10 * Math.cos(t), H/2 + 40);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

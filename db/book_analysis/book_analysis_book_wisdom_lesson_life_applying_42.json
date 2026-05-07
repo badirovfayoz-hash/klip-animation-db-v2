@@ -1,0 +1,16 @@
+{
+  "id": "book_analysis_book_wisdom_lesson_life_applying_42",
+  "category": "book_analysis",
+  "topic": "book wisdom lesson life applying 42",
+  "tags": [
+    "book",
+    "wisdom",
+    "lesson",
+    "life",
+    "applying",
+    "42"
+  ],
+  "created": "2026-05-07T15:39:36.145233",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // book\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'white';\n  ctx.beginPath();\n  ctx.rect(W/2-50, H/2-75, 100, 150);\n  ctx.fill();\n  ctx.stroke();\n  \n  // stick figure\n  ctx.beginPath();\n  ctx.arc(W/2, H/2+50, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2+30);\n  ctx.lineTo(W/2, H/2+70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2-25, H/2+50);\n  ctx.lineTo(W/2, H/2+70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2+25, H/2+50);\n  ctx.lineTo(W/2, H/2+70);\n  ctx.stroke();\n  \n  // wisdom text\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('42', W/2, H/2-100 + 50 * Math.sin(t));\n  \n  ctx.restore();\n}"
+}
