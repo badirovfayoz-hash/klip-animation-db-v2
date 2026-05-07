@@ -1,0 +1,15 @@
+{
+  "id": "events_life_event_changing_moment_794",
+  "category": "events",
+  "topic": "life event changing moment 794",
+  "tags": [
+    "life",
+    "event",
+    "changing",
+    "moment",
+    "794"
+  ],
+  "created": "2026-05-07T15:14:42.417725",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50 + 20*Math.sin(t), 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 70 + 30*Math.cos(t));\n  ctx.lineTo(W/2, H/2 + 100);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 30, H/2 + 90);\n  ctx.lineTo(W/2 - 60, H/2 + 120 + 10*Math.sin(t));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 30, H/2 + 90);\n  ctx.lineTo(W/2 + 60, H/2 + 120 - 10*Math.sin(t));\n  ctx.stroke();\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('?', W/2, H/2 - 80 + 20*Math.cos(t));\n  ctx.restore();\n}"
+}

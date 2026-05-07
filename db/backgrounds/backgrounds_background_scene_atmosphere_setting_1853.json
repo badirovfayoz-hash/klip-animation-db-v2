@@ -1,0 +1,15 @@
+{
+  "id": "backgrounds_background_scene_atmosphere_setting_1853",
+  "category": "backgrounds",
+  "topic": "background scene atmosphere setting 1853",
+  "tags": [
+    "background",
+    "scene",
+    "atmosphere",
+    "setting",
+    "1853"
+  ],
+  "created": "2026-05-07T15:15:16.072575",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  \n  // draw hills\n  ctx.beginPath();\n  ctx.moveTo(0, H);\n  ctx.lineTo(W, H);\n  ctx.lineTo(W, H - 100 - 50 * Math.sin(t));\n  ctx.lineTo(0, H - 100 - 50 * Math.cos(t));\n  ctx.closePath();\n  ctx.stroke();\n  \n  // draw trees\n  ctx.beginPath();\n  ctx.moveTo(W / 2 - 20, H - 150 - 20 * Math.sin(t));\n  ctx.lineTo(W / 2 - 20, H - 50);\n  ctx.lineTo(W / 2 + 20, H - 50);\n  ctx.lineTo(W / 2 + 20, H - 150 - 20 * Math.sin(t));\n  ctx.closePath();\n  ctx.stroke();\n  \n  // draw sun\n  ctx.beginPath();\n  ctx.arc(W - 50, 50 + 20 * Math.cos(t), 20, 0, 2 * Math.PI);\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}
