@@ -1,0 +1,15 @@
+{
+  "id": "humans_person_writing_journal_late_night",
+  "category": "humans",
+  "topic": "person writing journal late night",
+  "tags": [
+    "person",
+    "writing",
+    "journal",
+    "late",
+    "night"
+  ],
+  "created": "2026-05-07T07:37:34.676208",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  \n  // table\n  ctx.fillRect(W/2-50, H/2+20, 100, 30);\n  ctx.strokeRect(W/2-50, H/2+20, 100, 30);\n  \n  // journal\n  ctx.fillRect(W/2-40, H/2+25, 80, 20);\n  ctx.strokeRect(W/2-40, H/2+25, 80, 20);\n  \n  // pen\n  ctx.beginPath();\n  ctx.moveTo(W/2-30, H/2+45);\n  ctx.lineTo(W/2-30, H/2+70);\n  ctx.stroke();\n  \n  // person\n  ctx.beginPath();\n  ctx.arc(W/2, H/2-50, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  // arm\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2-30);\n  ctx.lineTo(W/2-30, H/2+50 + 20 * Math.sin(t));\n  ctx.stroke();\n  \n  // hand\n  ctx.beginPath();\n  ctx.arc(W/2-30, H/2+50 + 20 * Math.sin(t), 10, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

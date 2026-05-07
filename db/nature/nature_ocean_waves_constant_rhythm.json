@@ -1,0 +1,14 @@
+{
+  "id": "nature_ocean_waves_constant_rhythm",
+  "category": "nature",
+  "topic": "ocean waves constant rhythm",
+  "tags": [
+    "ocean",
+    "waves",
+    "constant",
+    "rhythm"
+  ],
+  "created": "2026-05-07T07:37:52.961097",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  for (let i = 0; i < 10; i++) {\n    ctx.beginPath();\n    ctx.moveTo(0, H / 2 + i * 20 + Math.sin(t + i) * 10);\n    for (let x = 0; x < W; x++) {\n      ctx.lineTo(x, H / 2 + i * 20 + Math.sin(t + x / 50 + i) * 10);\n    }\n    ctx.stroke();\n  }\n  ctx.restore();\n}"
+}

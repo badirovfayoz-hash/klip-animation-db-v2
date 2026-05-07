@@ -1,0 +1,13 @@
+{
+  "id": "abstract_memory_fading_cherishing",
+  "category": "abstract",
+  "topic": "memory fading cherishing",
+  "tags": [
+    "memory",
+    "fading",
+    "cherishing"
+  ],
+  "created": "2026-05-07T07:37:10.709612",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'black';\n  let centerX = W / 2;\n  let centerY = H / 2;\n  let radius = 50 + 20 * Math.sin(t);\n  ctx.beginPath();\n  ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);\n  ctx.stroke();\n  let memoX = centerX + 30 * Math.cos(3 * t);\n  let memoY = centerY + 30 * Math.sin(3 * t);\n  ctx.beginPath();\n  ctx.arc(memoX, memoY, 10, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(memoX, memoY);\n  ctx.lineTo(centerX, centerY);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(centerX, centerY, 10, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.globalAlpha = 0.5 + 0.5 * Math.sin(2 * t);\n  ctx.font = '20px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Memory', centerX, centerY - radius - 20);\n  ctx.globalAlpha = 1;\n  ctx.beginPath();\n  ctx.moveTo(centerX, centerY);\n  ctx.lineTo(centerX, H);\n  ctx.setLineDash([10, 10]);\n  ctx.stroke();\n  ctx.setLineDash([]);\n  ctx.restore();\n}"
+}
