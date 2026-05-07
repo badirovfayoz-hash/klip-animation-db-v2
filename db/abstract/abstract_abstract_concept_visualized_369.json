@@ -1,0 +1,14 @@
+{
+  "id": "abstract_abstract_concept_visualized_369",
+  "category": "abstract",
+  "topic": "abstract concept visualized 369",
+  "tags": [
+    "abstract",
+    "concept",
+    "visualized",
+    "369"
+  ],
+  "created": "2026-05-07T16:12:22.780161",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  for (let i = 0; i < 360; i += 30) {\n    ctx.beginPath();\n    ctx.arc(W / 2, H / 2, 100 + 50 * Math.sin(t + i / 10), 0, 2 * Math.PI);\n    ctx.stroke();\n  }\n  for (let i = 0; i < 360; i += 30) {\n    ctx.beginPath();\n    ctx.arc(W / 2, H / 2, 150 + 50 * Math.cos(t + i / 10), 0, 2 * Math.PI);\n    ctx.stroke();\n  }\n  ctx.fillStyle = 'black';\n  ctx.font = '48px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillText('369', W / 2, H / 2);\n  ctx.restore();\n}"
+}

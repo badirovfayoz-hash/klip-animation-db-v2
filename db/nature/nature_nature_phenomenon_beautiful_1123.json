@@ -1,0 +1,14 @@
+{
+  "id": "nature_nature_phenomenon_beautiful_1123",
+  "category": "nature",
+  "topic": "nature phenomenon beautiful 1123",
+  "tags": [
+    "nature",
+    "phenomenon",
+    "beautiful",
+    "1123"
+  ],
+  "created": "2026-05-07T16:12:18.069910",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n\n  // sun\n  ctx.fillStyle = 'yellow';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50 + 20*Math.sin(t), 0, 2*Math.PI);\n  ctx.fill();\n  ctx.stroke();\n\n  // clouds\n  ctx.fillStyle = 'white';\n  for (let i = 0; i < 5; i++) {\n    ctx.beginPath();\n    ctx.arc(W/2 + 100*Math.cos(t + i), H/2 + 50*Math.sin(t + i), 20 + 10*Math.sin(t + i), 0, 2*Math.PI);\n    ctx.fill();\n    ctx.stroke();\n  }\n\n  // trees\n  ctx.fillStyle = 'green';\n  ctx.beginPath();\n  ctx.rect(W/2 - 100, H - 50, 20, 50 + 20*Math.sin(t));\n  ctx.fill();\n  ctx.stroke();\n\n  ctx.beginPath();\n  ctx.rect(W/2 + 50, H - 50, 20, 50 + 20*Math.sin(t + Math.PI/2));\n  ctx.fill();\n  ctx.stroke();\n\n  // birds\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2 + 150*Math.cos(t), H/2 - 50*Math.sin(t), 10, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.stroke();\n\n  ctx.beginPath();\n  ctx.arc(W/2 + 150*Math.cos(t + Math.PI), H/2 - 50*Math.sin(t + Math.PI), 10, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.stroke();\n\n  ctx.restore();\n}"
+}
