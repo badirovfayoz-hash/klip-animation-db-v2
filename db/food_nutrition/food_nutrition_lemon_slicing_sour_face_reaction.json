@@ -1,0 +1,15 @@
+{
+  "id": "food_nutrition_lemon_slicing_sour_face_reaction",
+  "category": "food_nutrition",
+  "topic": "lemon slicing sour face reaction",
+  "tags": [
+    "lemon",
+    "slicing",
+    "sour",
+    "face",
+    "reaction"
+  ],
+  "created": "2026-05-07T13:49:09.831989",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // face\n  ctx.fillStyle = '#ffffff';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 50, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // eyes\n  ctx.fillStyle = '#000000';\n  ctx.beginPath();\n  ctx.arc(W/2 - 20, H/2 - 20, 10, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.arc(W/2 + 20, H/2 - 20, 10, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // mouth\n  ctx.lineWidth = 5;\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 20, 20, 0, Math.PI);\n  ctx.stroke();\n  \n  // sour face reaction\n  ctx.lineWidth = 5;\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 30, H/2 + 40);\n  ctx.lineTo(W/2 - 10, H/2 + 60 + 20 * Math.sin(t));\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 30, H/2 + 40);\n  ctx.lineTo(W/2 + 10, H/2 + 60 + 20 * Math.sin(t));\n  ctx.stroke();\n  \n  // lemon\n  ctx.fillStyle = '#ffff00';\n  ctx.beginPath();\n  ctx.arc(W/2 + 80, H/2 - 50, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  \n  // knife\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 70, H/2 - 30);\n  ctx.lineTo(W/2 + 90, H/2 - 30);\n  ctx.stroke();\n  \n  // slicing motion\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 80, H/2 - 50);\n  ctx.lineTo(W/2 + 80, H/2 - 50 + 20 * Math.sin(t));\n  ctx.stroke();\n  \n  ctx.restore();\n}"
+}

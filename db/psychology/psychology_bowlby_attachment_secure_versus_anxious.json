@@ -1,0 +1,15 @@
+{
+  "id": "psychology_bowlby_attachment_secure_versus_anxious",
+  "category": "psychology",
+  "topic": "bowlby attachment secure versus anxious",
+  "tags": [
+    "bowlby",
+    "attachment",
+    "secure",
+    "versus",
+    "anxious"
+  ],
+  "created": "2026-05-07T13:48:58.603984",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.strokeStyle = 'black';\n  ctx.lineWidth = 4;\n\n  // Mother figure\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2, 20, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 20);\n  ctx.lineTo(W/2, H/2 + 50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 - 20, H/2 + 70);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 50);\n  ctx.lineTo(W/2 + 20, H/2 + 70);\n  ctx.stroke();\n\n  // Secure child\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2 - 100 + 50*Math.sin(t), H/2 + 100, 15, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100 + 50*Math.sin(t), H/2 + 115);\n  ctx.lineTo(W/2 - 100 + 50*Math.sin(t), H/2 + 145);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100 + 50*Math.sin(t), H/2 + 145);\n  ctx.lineTo(W/2 - 120 + 50*Math.sin(t), H/2 + 165);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 - 100 + 50*Math.sin(t), H/2 + 145);\n  ctx.lineTo(W/2 - 80 + 50*Math.sin(t), H/2 + 165);\n  ctx.stroke();\n\n  // Anxious child\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2 + 100 + 20*Math.cos(t), H/2 + 100, 15, 0, 2*Math.PI);\n  ctx.fill();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100 + 20*Math.cos(t), H/2 + 115);\n  ctx.lineTo(W/2 + 100 + 20*Math.cos(t), H/2 + 145);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100 + 20*Math.cos(t), H/2 + 145);\n  ctx.lineTo(W/2 + 80 + 20*Math.cos(t), H/2 + 165);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2 + 100 + 20*Math.cos(t), H/2 + 145);\n  ctx.lineTo(W/2 + 120 + 20*Math.cos(t), H/2 + 165);\n  ctx.stroke();\n\n  ctx.restore();\n}"
+}
