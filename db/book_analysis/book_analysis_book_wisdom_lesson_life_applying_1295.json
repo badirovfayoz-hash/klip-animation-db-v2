@@ -1,0 +1,16 @@
+{
+  "id": "book_analysis_book_wisdom_lesson_life_applying_1295",
+  "category": "book_analysis",
+  "topic": "book wisdom lesson life applying 1295",
+  "tags": [
+    "book",
+    "wisdom",
+    "lesson",
+    "life",
+    "applying",
+    "1295"
+  ],
+  "created": "2026-05-07T16:15:29.665327",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // book\n  ctx.fillStyle = '#663300';\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.fillRect(W/2 - 50, H/2 - 50, 100, 100);\n  ctx.strokeRect(W/2 - 50, H/2 - 50, 100, 100);\n  \n  // stick figure\n  ctx.fillStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2, H/2 + 120, 20, 0, 2 * Math.PI);\n  ctx.fill();\n  ctx.lineWidth = 3;\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 100);\n  ctx.lineTo(W/2, H/2 + 150);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 120);\n  ctx.lineTo(W/2 - 30, H/2 + 150);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2, H/2 + 120);\n  ctx.lineTo(W/2 + 30, H/2 + 150);\n  ctx.stroke();\n  \n  // book opening\n  ctx.fillStyle = '#663300';\n  ctx.save();\n  ctx.translate(W/2 - 50, H/2 - 50);\n  ctx.rotate(Math.sin(t) * Math.PI / 4);\n  ctx.fillRect(0, 0, 50, 100);\n  ctx.restore();\n  ctx.strokeRect(W/2 - 50, H/2 - 50, 50, 100);\n  \n  ctx.restore();\n}"
+}

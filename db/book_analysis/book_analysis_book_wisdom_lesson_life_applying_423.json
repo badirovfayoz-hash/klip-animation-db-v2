@@ -1,0 +1,16 @@
+{
+  "id": "book_analysis_book_wisdom_lesson_life_applying_423",
+  "category": "book_analysis",
+  "topic": "book wisdom lesson life applying 423",
+  "tags": [
+    "book",
+    "wisdom",
+    "lesson",
+    "life",
+    "applying",
+    "423"
+  ],
+  "created": "2026-05-07T16:16:01.865969",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  \n  // book\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.fillStyle = 'white';\n  ctx.beginPath();\n  ctx.rect(W/2-50, H/2-75, 100, 150);\n  ctx.stroke();\n  ctx.fill();\n  \n  // wisdom text\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Wisdom', W/2, H/2-100 + 20*Math.sin(t));\n  \n  // lesson text\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Lesson', W/2, H/2 + 20*Math.sin(t));\n  \n  // life text\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Life', W/2, H/2+100 + 20*Math.cos(t));\n  \n  // applying text\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('Applying', W/2+50*Math.cos(t), H/2+50);\n  \n  // stick figure\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.arc(W/2-150, H/2, 20, 0, 2*Math.PI);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2-150, H/2+20);\n  ctx.lineTo(W/2-150, H/2+50);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2-150, H/2+50);\n  ctx.lineTo(W/2-120, H/2+80);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(W/2-150, H/2+50);\n  ctx.lineTo(W/2-180, H/2+80);\n  ctx.stroke();\n  \n  // 423 text\n  ctx.font = '36px Arial';\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.fillStyle = 'black';\n  ctx.fillText('423', W/2+150, H/2+50);\n  \n  ctx.restore();\n}"
+}
