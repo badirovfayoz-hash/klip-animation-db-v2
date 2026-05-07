@@ -1,0 +1,15 @@
+{
+  "id": "backgrounds_background_scene_atmosphere_setting_1680",
+  "category": "backgrounds",
+  "topic": "background scene atmosphere setting 1680",
+  "tags": [
+    "background",
+    "scene",
+    "atmosphere",
+    "setting",
+    "1680"
+  ],
+  "created": "2026-05-07T15:57:33.233350",
+  "model": "llama-3.3-70b-versatile",
+  "draw": "function draw(ctx, t, W, H) {\n  ctx.save();\n  ctx.fillStyle = '#f5f0e8';\n  ctx.fillRect(0, 0, W, H);\n  ctx.lineWidth = 4;\n  ctx.strokeStyle = 'black';\n  ctx.beginPath();\n  ctx.moveTo(0, H/2 + Math.sin(t) * 20);\n  ctx.lineTo(W, H/2 + Math.sin(t + Math.PI) * 20);\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.moveTo(0, H/2 + 100 + Math.sin(t + Math.PI/2) * 10);\n  ctx.lineTo(W, H/2 + 100 + Math.sin(t + Math.PI/2 + Math.PI) * 10);\n  ctx.stroke();\n  ctx.fillStyle = 'black';\n  ctx.font = '24px Arial';\n  ctx.textAlign = 'left';\n  ctx.textBaseline = 'top';\n  ctx.fillText('1680', 10, 10);\n  ctx.restore();\n}"
+}
